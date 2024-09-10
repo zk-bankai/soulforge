@@ -1,68 +1,137 @@
-# Name of Your Project
 
-> **Note:** This document will be part of the terms and conditions of your agreement and should include all required information. Please use markdown instead of HTML.
+# [Project Name]
 
-## [Section 1] Information
+  
 
-- **Project Name:** (e.g., Hasira)
-- **Payment Details:** Wallet address for USDC or USDT payments [Polygon]
-- **Total Amount Requested:** 12,000 USDC
+>  **Note:** This document will be part of the grant agreement. Ensure that all sections are completed accurately. Please use **markdown** format and **delete all instructional notes** before submitting.
+
+  
+
+## [Section 1] Project Information
+
+  
+
+-  **Project Name:** (e.g., Hashira)
+
+-  **Payment Details:** Provide your wallet address for USDC (on Polygon Network).
+
+-  **Total Amount Requested:** (e.g., 12,000 USDC)
+
+  
 
 ## [Section 2] Project Overview :page_facing_up:
 
-- **Brief Description:**  
-  A short summary of your project, including its relation to Plonky3 or Circom and why you're excited about it.
+  
 
-- **Core Idea:**  
-  What is your project’s primary goal or innovation? Briefly describe the main components and architecture.
+-  **Brief Description:**
 
-- **Technology Stack:**  
-  An outline of the technologies, tools, and platforms you plan to use.
+Provide a short summary of your project, including its relationship to **Plonky3** or **CIRCOM** and why it excites you. This should include key goals and the objective of the grant.
 
-- **Design Mockups/Prototypes [If any]:**  
-  Attach any designs or early prototypes, if available.
+  
 
-> **Note:** We encourage innovative ideas, even if they are not fully developed. Please provide as much detail as possible.
+-  **Core Idea:**
+
+Describe the primary goal or innovation of your project. What’s the key component or architecture? Be concise yet detailed enough to showcase the essence of the idea.
+
+  
+
+-  **Technology Stack:**
+
+List the technologies, tools, platforms, and frameworks you plan to use in your project.
+
+  
+
+-  **Design Mockups/Prototypes (Optional):**
+
+Attach any design files or prototypes if available.
+
+  
+
+>  **Note:** Provide as much detail as possible. Even innovative ideas at early stages are welcome.
+
+  
 
 ## [Section 3] Ecosystem Fit
 
-- **Similar Projects:**  
-  Are there other projects like yours? How is yours different?
+  
 
-- **Unique Contribution:**  
-  What gaps does your project fill in the Plonky3 or Circom landscape?
+-  **Similar Projects:**
+
+Mention any similar projects [If any exists], How is the idea of this project different or better?
+
+  
+
+-  **Unique Contribution:**
+
+Explain the unique value your project brings to the **Plonky3** or **CIRCOM** ecosystem. What gaps does it fill?
+
+  
 
 ## [Section 4] Team :busts_in_silhouette:
 
-- **Team Members:**  
-  Names of team members [Separated by ", "]
+  
 
-- **Contact Information:**  
-  - **Name:** Name of the Point of Contact
-  - **Email:** Email of the Point of Contact
+-  **Team Members:**
 
-- **Prior Work/Research:**  
-  Any relevant existing work or research that you would like to share.
+List the names of all team members (separated by commas).
+
+  
+
+-  **Contact Information:**
+
+-  **Name:** Name of the primary contact person.
+
+-  **Email:** Email address of the primary contact person.
+
+  
+
+-  **Prior Work/Research (Optional):**
+
+Share any relevant previous work or research that highlights your expertise.
+
+  
 
 ## [Section 5] Development Roadmap :open_book:
 
-> **Important Note:** The maximum duration for projects is 2 months.
+  
+
+>  **Important:** The maximum project duration is 2 months. Outline milestones and timelines accordingly.
+
+  
 
 ### Milestone 1 — Basic Functionality
 
-- **Estimated Duration:** 1 month
-- **Description:** A brief description of the tasks to be completed under this milestone.
-- **FTE:** 1.5
-- **Costs:** 8,000 USD [Brownie points for detailing the category of expenses]
+  
+
+-  **Estimated Duration:** (e.g., 1 month)
+
+-  **Description:** A detailed description of the tasks and deliverables for this milestone.
+
+-  **FTE (Full-Time Equivalent):** Indicate the total number of team members and the percentage of time they will contribute (e.g., 1.5 FTE).
+
+-  **Costs:** (e.g., 8,000 USDC) Breakdown of estimated costs (provide a detailed category of expenses if possible).
+
+  
 
 ### Milestone 2 — Additional Features
 
-- **Estimated Duration:** 1 month
-- **Description:** A brief description of the tasks to be completed under this milestone.
-- **FTE:** 1.5
-- **Costs:** 4,000 USD
+  
+
+-  **Estimated Duration:** (e.g., 1 month)
+
+-  **Description:** A detailed description of tasks to be completed under this milestone.
+
+-  **FTE:** (e.g., 1.5)
+
+-  **Costs:** (e.g., 4,000 USDC)
+
+  
+  ### Total Costs: (e.g. 8,000+4,000 = 12,000 USDC)
 
 ## [Section 6] Extended Scope
 
-- **Future Plans:**  
-  How you intend to use, enhance, and promote your project in the short term and how you think it can be incorporated or collaborated with other projects.
+  
+
+-  **Future Plans:**
+
+Explain how you intend to extends, enhances the projects after the initial development phase. Include any plans for collaboration or integration with other projects in the ecosystem, If relevant.
