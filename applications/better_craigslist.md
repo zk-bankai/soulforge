@@ -1,5 +1,3 @@
-I understand. I'll reformat the content into the new structure you've provided. Here's the reformatted grant proposal:
-
 **# A Better Craigslist with ZK Email**
 
 **## [Section 1] Project Information**
