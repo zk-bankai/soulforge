@@ -1,11 +1,11 @@
-**# A Better Craigslist with ZK Email**
+# A Better Craigslist with ZK Email
 
-**## [Section 1] Project Information**
+## [Section 1] Project Information
 - **Project Name:** A Better Craigslist with ZK Email
 - **Payment Details:** [Wallet address for USDC on Polygon Network needs to be provided]
 - **Total Amount Requested:** [Amount needs to be specified]
 
-**## [Section 2] Project Overview :page_facing_up:**
+## [Section 2] Project Overview :page_facing_up:
 - **Brief Description:**
 This project aims to create an improved version of Craigslist using ZK Email technology. It addresses current issues with Craigslist such as safety concerns, privacy risks, and platform clutter by leveraging zero-knowledge proofs for enhanced user privacy and security. The project is exciting because it combines the widespread utility of a platform like Craigslist with cutting-edge cryptographic techniques to create a safer, more efficient online marketplace.
 
@@ -27,14 +27,14 @@ The core innovation is the integration of ZK Email verification into a Craigslis
 - **Design Mockups/Prototypes:**
 Google Slides Deck: https://docs.google.com/presentation/d/1DpBjevrsX0JbfOUfDmSt1lKTNH_XKoSt7tbtwGCr96M/edit?usp=sharing
 
-**## [Section 3] Ecosystem Fit**
+## [Section 3] Ecosystem Fit
 - **Similar Projects:**
 While there are existing classified ad platforms and blockchain-based marketplaces, this project uniquely combines ZK Email verification with a familiar Craigslist-like interface.
 
 - **Unique Contribution:**
 This project brings enhanced privacy and security to the online classified ad ecosystem through zero-knowledge proofs. It addresses critical issues in existing platforms while maintaining ease of use, potentially setting a new standard for secure online marketplaces.
 
-**## [Section 4] Team :busts_in_silhouette:**
+## [Section 4] Team :busts_in_silhouette:
 - **Team Members:** Yash Bharti, Krishanu Dhar
 
 - **Contact Information:**
@@ -66,9 +66,9 @@ This project brings enhanced privacy and security to the online classified ad ec
    -  GitHub: https://github.com/ronykris
    
 
-**## [Section 5] Development Roadmap :open_book:**
+## [Section 5] Development Roadmap :open_book:
 
-**### Milestone 1 — Planning and Initial Development**
+### Milestone 1 — Planning and Initial Development
 - **Estimated Duration:** 1 month
 - **Description:** 
   - Project planning and environment setup
@@ -79,7 +79,7 @@ This project brings enhanced privacy and security to the online classified ad ec
 - **FTE:** 1 FTE
 - **Costs:** [To be specified]
 
-**### Milestone 2 — Integration and Deployment**
+### Milestone 2 — Integration and Deployment
 - **Estimated Duration:** 1 month
 - **Description:**
   - Generate and integrate ERC-721 tokens
@@ -90,9 +90,9 @@ This project brings enhanced privacy and security to the online classified ad ec
 - **FTE:** 1 FTE
 - **Costs:** [To be specified]
 
-**### Total Costs:** [To be calculated based on milestone costs]
+### Total Costs:** [To be calculated based on milestone costs]
 
-**## [Section 6] Extended Scope**
+## [Section 6] Extended Scope**
 - **Future Plans:**
   - Enhance the platform's UI/UX based on user feedback
   - Expand the types of verifiable credentials beyond email
