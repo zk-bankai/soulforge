@@ -18,30 +18,24 @@
 
 ### **Brief Description:**
 
-Ensuring the authenticity and credibility of daily media on internet is an ongoing problem. Meanwhile, genuinely captured images often require refinements before publication. **_Zero-knowledge proofs (ZKPs)_** offer a solution by verifying edited image without disclosing the original source. However, ZKPs typically come with high costs, particularly in terms of prover complexity and proof size.
 
-We propose [**VIMz**](https://github.com/zero-savvy/vimz), a framework for efficiently proving the authenticity of high-resolution images using _folding-based_ _zkSNARKs_ (using [nova](https://github.com/microsoft/Nova) proving system). We use [Circom](https://github.com/iden3/circom) to define our flding steps in nova through ([nova-scotia](https://github.com/nalinbhardwaj/Nova-Scotia) frontend). As a complete proof system, VIMz proves the integrity of both the original and edited images, as well as the correctness of the transformation without revealing intermediate images within a chain of edits---only the final result is disclosed. VIMz maintains the anonymity of the original signer and all subsequent editors while proving the authenticity of the final image. This enables the development of a privacy-preserving autonomous contract system for trustless and authentic marketplace compatible with [C2PA](https://c2pa.org/) standards. 
+Making sure that images shared online are authentic and trustworthy is a big challenge. But let's be real: most images need some tweaking before they go public. **Zero-knowledge proofs (ZKPs)** can help by verifying edited images without needing to reveal the original. The problem? ZKPs are often costly, especially when it comes to prover complexity and proof size. That's where [**VIMz**](https://github.com/zero-savvy/vimz) comes in. VIMz is a framework designed to prove the authenticity of high-resolution images efficiently using _folding-based zkSNARKs_ (powered by the [Nova](https://github.com/microsoft/Nova) proving system). With VIMz, we can verify that both the original and edited images are legit, along with the correctness of the transformations, all without revealing any intermediate versions—only the final image is exposed. Plus, VIMz keeps the identities of the original creator and subsequent editors private while proving the final image's authenticity, making it ideal for privacy-preserving, trustless marketplaces compatible with C2PA standards. It's efficient enough to handle 8K images on a mid-range laptop with minimal memory and proof size, offering fast verification and parallel processing capabilities. We formally prove the security of VIMz on our recent [paper](https://eprint.iacr.org/2024/1063).
 
-  Our benchmarks show that VIMz performs efficiently in both prover and verifier sides. It can practically prove the transformations on **8K (33MP) images** on **a mid-range laptop**, while reaching to **a peak memory of only 10 GB**. Moreover, VIMz has a **verification time of under 1 second** and achieves **succinct proofs of less than 11 KB** for all resolutions. VIMz's low prover complexity allows for proving multiple transformations in parallel to achieve an additional 3.5x speedup on the same laptop device.
-  
-  VIMz is fully open-source and available on a [public GitHub repository](https://github.com/zero-savvy/vimz). Within this repository, you will find all the code necessary for implementing zero-knowledge circuits in the Circom language, which can be used with Nova. The repository is organized into four directories: 
-  
-   --  **circuits:** Contains the underlying ZK circuits of VIMz in circom language.
-   
-   --  **contracts:** Contains high-level Solidity smart contracts that provide the infrastructure for a C2PA-compatible marketplace on EVM-based blockchains.
-   
-   --  **nova:** Contains the main cargo-based package for building and installing VIMz using nova protocol.
-   
-   --  **py_modules:** Houses the Python interface (GUI) of VIMz, facilitating image editing and preparation of input files for the VIMz prover.
-   
-   --  **samples:** Holds images in standard resolutions (e.g., SD, HD, 4K) along with pre-built JSON files of supported edits to be fed into the VIMz prover.
-  
+
 
 ###  **Core Idea:**
 
-Describe the primary goal or innovation of your project. What’s the key component or architecture? Be concise yet detailed enough to showcase the essence of the idea.
+To address the prover complexity in _"proofs of media provenance,"_ we utilized the efficiency of folding schemes, specifically the [Nova](https://github.com/microsoft/Nova) protocol. More precisely, we leverage [Circom](https://github.com/iden3/circom) to define our folding steps in Nova via the [Nova-Scotia](https://github.com/nalinbhardwaj/Nova-Scotia) frontend. To ensure everything works securely, we developed a new commitment scheme for images, processing them row by row. This approach allows us to map any image transformation to a **_"folding-friendly"_** version that can be proven in Nova while also proving the commitment of the witness, i.e., the original image. For more details on the exact protocol and the formal security analysis of VIMz, refer to our recent [paper](https://eprint.iacr.org/2024/1063). With VIMz, we can verify both the original and edited images, as well as the correctness of the transformations, without revealing intermediate versions—only the final image is shown. Additionally, VIMz protects the identities of both the original creator and subsequent editors while proving the authenticity of the final image.
 
-  
+Our tests show that VIMz is fast and efficient on both the prover and verifier sides. For example, you can prove transformations on **8K (33MP) images** using just **a mid-range laptop**, hitting a peak memory usage of **10 GB**. Verification takes **less than 1 second**, and proof sizes come in at **under 11 KB** no matter the resolution. Plus, the low complexity of VIMz means you can prove multiple transformations in parallel, boosting performance by up to **3.5x** on the same machine.
+
+VIMz is fully open-source and available on our [GitHub repository](https://github.com/zero-savvy/vimz). The repo is organized into several key directories:
+
+- **circuits:** The core ZK circuits for VIMz, written in Circom.
+- **contracts:** Solidity smart contracts that help create a C2PA-compatible marketplace on EVM-based blockchains.
+- **nova:** The main package for building and running VIMz using the Nova protocol.
+- **py_modules:** A Python-based GUI for image editing and preparing input files for the VIMz prover.
+- **samples:** Sample images (SD, HD, 4K, etc.) and JSON files with supported edits ready to feed into the VIMz prover.
 
 ###  **Technology Stack:**
 
@@ -52,12 +46,10 @@ VIMz is based on multiple programming stacks as follows:
 - **Python:** for a user-friendly UI for editing images and creating inputs needed for our circuits.
 - **Solidity:** for building C2PA-compatible autonomous media marketplace.
 
-  
-
 ###  **Design Mockups/Prototypes (Optional):**
 
-The project is available and accessible publicly as an open-source on-going project in Github: [VIMz Repo](https://github.com/zero-savvy/vimz).
-
+Project Repo: https://github.com/zero-savvy/vimz
+Project Paper: https://eprint.iacr.org/2024/1063
   
 
 ## [Section 3] Ecosystem Fit
@@ -74,7 +66,9 @@ those projects are:
   
 -  **Unique Contribution:**
 
-All of circuits in VIMz are built purely using Circom. This is the first serious attempt on using folding-based zkSNARKs with Circom DSL in the field of media authenticity.
+All of circuits in VIMz are built purely using Circom. 
+To this point, VIMz is the most developed, fastest and most succinct "proofs of media provenance" available. 
+This is the first serious attempt on using folding-based zkSNARKs with Circom DSL in the field of media authenticity.
   
 
 ## [Section 4] Team :busts_in_silhouette:
@@ -83,7 +77,9 @@ All of circuits in VIMz are built purely using Circom. This is the first serious
 
 -  **Team Members:**
 
-Core contributors the project (alphabetically ordered): Stefan Dziembowski, Shahriar Ebrahimi, Parisa Hassanizadeh.
+**Core contributors the project (alphabetically ordered):** [Shahriar Ebrahimi](https://github.com/lovely-necromancer), [Parisa Hassanizadeh](https://github.com/orgs/zero-savvy/people/parizad1188).
+
+**Recently joined team member:** [Piotr Mikołajczyk](https://github.com/orgs/zero-savvy/people/pmikolajczyk41).
   
 
 -  **Contact Information:**
@@ -91,59 +87,61 @@ Core contributors the project (alphabetically ordered): Stefan Dziembowski, Shah
 There are two primary contat persons for the project:
 
 -  **Contact Person 1:**
-  -  **Name:** Parisa Hassanizadeh
-  -  **Email:** parisaa.hassanizadeh@gmail.com
+   -  **Name:** Parisa Hassanizadeh
+   -  **Email:** parisaa.hassanizadeh@gmail.com
 -  **Contact Person 2:**
-  -  **Name:** Shahriar Ebrahimi
-  -  **Email:** sh.ebrahimi92@gmail.com
+   -  **Name:** Shahriar Ebrahimi
+   -  **Email:** sh.ebrahimi92@gmail.com
 
-### **Prior Work/Research (Optional):**
-
-- https://eprint.iacr.org/2024/1066
-- https://eprint.iacr.org/2024/1074
-- https://arxiv.org/pdf/2211.04775
+### **Prior Work/Research:**
+Following, are some of the recent related projects that core memebers built with ZKPs (all use Circom):
+ - **zRA:** transparent and non-interactive remote attestation based on zkSNARKs
+     - Paper: Published on NDSS-24 conference: [Link](https://www.ndss-symposium.org/ndss-paper/from-interaction-to-independence-zksnarks-for-transparent-and-non-interactive-remote-attestation/)
+     - Github: [repo](https://github.com/zero-savvy/zk-remote-attestation)
+ - **ProvenView:** provable proofs of video trimming
+     - Awarads: [best "proof of provenance" in zkHack Krakow by Nethermind](https://devfolio.co/projects/provenview-8e82)
+     - Github: [repo](https://github.com/zero-savvy/proven-view)   
   
 
 ## [Section 5] Development Roadmap :open_book:
 
   
 
->  **Important:** The maximum project duration is 2 months. Outline milestones and timelines accordingly.
-
+>  **We have three active team mebers and working on both milestones will start simultaneously. So, we expect to achieve both milestones by the end of 2 months.**
   
 
-### Milestone 1 — Basic Functionality
+### Milestone 1 — Support of Selective Transformations
 
+-  **Estimated Duration:** 1 month
+
+-  **Description:** While currently we support global transformations in our **Circom** circuits (global means that the effect is done on all of the pixel images, e.g., tuning contrast or sharpness of the entire image), we need to go further and support selective transformations (e.g., you want to blur only a part of an image not the entire image). This requires additional layers of control in our **_"folding-friendly"_** image transformation functions in **Circom**. 
+
+-  **FTE (Full-Time Equivalent):** 1.5 FTE
+
+-  **Costs:** 5,000 USDC
+   -  Circuit developements (Circom + porting to Nova + test): 
+   -  Benchmarking and quantitative reports: 
+   -  Formal proofs: 
   
 
--  **Estimated Duration:** (e.g., 1 month)
+### Milestone 2 — Integration with Sonobe Folding Library --> Full Integration with EVM
 
--  **Description:** A detailed description of the tasks and deliverables for this milestone.
+-  **Estimated Duration:** 2 months
 
--  **FTE (Full-Time Equivalent):** Indicate the total number of team members and the percentage of time they will contribute (e.g., 1.5 FTE).
+-  **Description:** Currently we are using [nova-rs](https://github.com/microsoft/Nova) library for our folding backend. However, a more recent library [Sonobe](https://github.com/privacy-scaling-explorations/sonobe) exists that can generate Solidity verifiers for for our final compressed zkSNARKs. We plan to use our Circom circuits with that library and be able to fully deploy (without any mock contracts) our Solidity verifiers on a mainstream EVM, such as Polygon. The 100% achievement would be successful transactions on Polygon testment/mainnet proving authenticity of an image transformation using the proofs of VIMz. 
+ 
+-  **FTE:** 1.5 FTE
 
--  **Costs:** (e.g., 8,000 USDC) Breakdown of estimated costs (provide a detailed category of expenses if possible).
-
+-  **Costs:** 9,000 USDC
+   -  Developements (porting to Sobone + finctional tests): 
+   -  Writing final contracts: 
+   -  Deployment and further tests on Testnet/Mainnet: 
   
-
-### Milestone 2 — Additional Features
-
-  
-
--  **Estimated Duration:** (e.g., 1 month)
-
--  **Description:** A detailed description of tasks to be completed under this milestone.
-
--  **FTE:** (e.g., 1.5)
-
--  **Costs:** (e.g., 4,000 USDC)
-
-  
-  ### Total Costs: (e.g. 8,000+4,000 = 12,000 USDC)
+  ### Total Costs: (9,000 + 5,000 = 14,000 USDC)
 
 ## [Section 6] Extended Scope
 
-  
+We plan to go big enough to make VIMz an standard as a trustless alternative of the C2PA initiative. So, after successfully porting the VIMz to a mainstream EVM, we will starting approaching art and photography marketplaces along with news industry to integrate VIMz with their infrastructure.  
 
 -  **Future Plans:**
 
