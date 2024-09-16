@@ -79,7 +79,11 @@ This project brings enhanced privacy and security to the online classified ad ec
   - Implement Regex check for KYC
   - Develop client-side proving functions in Circom
 - **FTE:** 1 FTE
-- **Costs:** [To be specified]
+- **Costs:** 
+  - Costs: 7,500 USDC
+    - Development labor: 6,000 USDC
+    - Software licenses and tools: 1,000 USDC
+    - Miscellaneous expenses: 500 USDC
 
 **### Milestone 2 — Integration and Deployment**
 - **Estimated Duration:** 1 month
@@ -90,7 +94,11 @@ This project brings enhanced privacy and security to the online classified ad ec
   - Deploy ZK Email Verifier and related components
   - Finalize documentation and user guides
 - **FTE:** 1 FTE
-- **Costs:** [To be specified]
+- **Costs:**
+  - Costs: 7,500 USDC
+  - Development labor: 6,000 USDC
+  - Testing and quality assurance: 1,000 USDC
+  - Deployment and hosting costs: 500 USDC
 
 **### Total Costs:** [To be calculated based on milestone costs]
 
