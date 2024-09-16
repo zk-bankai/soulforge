@@ -24,7 +24,7 @@ The core innovation is the integration of zkEmail verification and Circom circui
   - Blockchain: Ethereum (for smart contracts)
   - ZK Proofs: Circom (ported from Circom)
   - Cryptography: RSA, SHA
-  - Privacy Layer: Aztec Network
+  - Privacy Layer: polygon Network
 
 
 ## [Section 3] Ecosystem Fit
@@ -55,9 +55,9 @@ This project brings enhanced privacy and security to whistleblowing through zero
    -  Full stack, smart contract and zkp developer
    -  6+ years in web3
    -  Solidity developer on EVM chains
-   -  ZK circuits developer in Mina, and Aztec
+   -  ZK circuits developer in Mina, and polygon
    -  Built zkpoker on EVM with solidity and zokrates
-   -  zknonogram and zkuno using Noir on Aztec
+   -  zknonogram and zkuno using Noir on polygon
    -  GitHub: https://github.com/ronykris
 
 ## [Section 5] Development Roadmap :open_book:
@@ -80,7 +80,7 @@ This project brings enhanced privacy and security to whistleblowing through zero
 - Estimated Duration: 1 month
 - Description:
   - Generate and integrate ERC-721 tokens
-  - Complete integration with Aztec Network
+  - Complete integration with polygon Network
   - Develop financial transaction features
   - Comprehensive testing of all components
   - Deploy ZK Email Verifier and related components
