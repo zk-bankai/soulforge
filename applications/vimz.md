@@ -8,9 +8,9 @@
 
 -  **Project Name:** VIMz
 
--  **Payment Details:** Provide your wallet address for USDC (on Polygon Network).
+-  **Payment Details:** 0xD4F6DC3Ac7AfD370544F307f4A53D6f77Ed4E818 (on Polygon Network).
 
--  **Total Amount Requested:** 14,000
+-  **Total Amount Requested:** 13,000
 
   
 
@@ -31,6 +31,9 @@ Our tests show that VIMz is fast and efficient on both the prover and verifier s
 
 VIMz is fully open-source and available on our [GitHub repository](https://github.com/zero-savvy/vimz). The repo is organized into several key directories:
 
+> [!NOTE]  
+> More than 53% of the repository is **Circom**.
+
 - **circuits:** The core ZK circuits for VIMz, written in Circom.
 - **contracts:** Solidity smart contracts that help create a C2PA-compatible marketplace on EVM-based blockchains.
 - **nova:** The main package for building and running VIMz using the Nova protocol.
@@ -46,7 +49,7 @@ VIMz is based on multiple programming stacks as follows:
 - **Python:** for a user-friendly UI for editing images and creating inputs needed for our circuits.
 - **Solidity:** for building C2PA-compatible autonomous media marketplace.
 
-###  **Design Mockups/Prototypes (Optional):**
+###  **Design Mockups/Prototypes:**
 
 Project Repo: https://github.com/zero-savvy/vimz
 Project Paper: https://eprint.iacr.org/2024/1063
@@ -59,7 +62,7 @@ Project Paper: https://eprint.iacr.org/2024/1063
 -  **Similar Projects:**
 
 The concept of generating proofs for image authenticity is very new and there are some academic works are available, which most of them have some public implementations. However, the key difference is that VIMz excels in performance compared to them and is the only work that has serious developing repository in terms of industry level. specially, VIMz is the ONLY blockchain-compatible proof system of this kind because its proofs are succinct and the verifier has low complexity.
-those projects are:
+those other academic works are:
 - https://eprint.iacr.org/2024/1066
 - https://eprint.iacr.org/2024/1074
 - https://arxiv.org/pdf/2211.04775
@@ -67,8 +70,8 @@ those projects are:
 -  **Unique Contribution:**
 
 All of circuits in VIMz are built purely using Circom. 
-To this point, VIMz is the most developed, fastest and most succinct "proofs of media provenance" available. 
-This is the first serious attempt on using folding-based zkSNARKs with Circom DSL in the field of media authenticity.
+To this point, VIMz is the **most developed**, **fastest** and **most succinct** "proofs of media provenance" available. 
+This is the first serious attempt on using **folding-based zkSNARKs with Circom DSL** in the field of media authenticity.
   
 
 ## [Section 4] Team :busts_in_silhouette:
@@ -116,33 +119,30 @@ Following, are some of the recent related projects that core memebers built with
 
 -  **Description:** While currently we support global transformations in our **Circom** circuits (global means that the effect is done on all of the pixel images, e.g., tuning contrast or sharpness of the entire image), we need to go further and support selective transformations (e.g., you want to blur only a part of an image not the entire image). This requires additional layers of control in our **_"folding-friendly"_** image transformation functions in **Circom**. 
 
--  **FTE (Full-Time Equivalent):** 1.5 FTE
+-  **FTE (Full-Time Equivalent):** 2 FTE
 
--  **Costs:** 5,000 USDC
-   -  Circuit developements (Circom + porting to Nova + test): 
-   -  Benchmarking and quantitative reports: 
-   -  Formal proofs: 
+-  **Costs:** 6,000 USDC
+   -  Circuit developements (Circom + porting to Nova + test): 4,500
+   -  Benchmarking and quantitative reports: 500
+   -  Formal proofs: 1,000
   
 
 ### Milestone 2 — Integration with Sonobe Folding Library --> Full Integration with EVM
 
--  **Estimated Duration:** 2 months
+-  **Estimated Duration:** 1.5 months
 
 -  **Description:** Currently we are using [nova-rs](https://github.com/microsoft/Nova) library for our folding backend. However, a more recent library [Sonobe](https://github.com/privacy-scaling-explorations/sonobe) exists that can generate Solidity verifiers for for our final compressed zkSNARKs. We plan to use our Circom circuits with that library and be able to fully deploy (without any mock contracts) our Solidity verifiers on a mainstream EVM, such as Polygon. The 100% achievement would be successful transactions on Polygon testment/mainnet proving authenticity of an image transformation using the proofs of VIMz. 
  
 -  **FTE:** 1.5 FTE
 
--  **Costs:** 9,000 USDC
-   -  Developements (porting to Sobone + finctional tests): 
-   -  Writing final contracts: 
-   -  Deployment and further tests on Testnet/Mainnet: 
+-  **Costs:** 7,000 USDC
+   -  Developements (porting Circom contrast to Sobone + functional tests): 2,300
+   -  Creating Solidity verifiers for the proofs + tests: 700
+   -  Writing final contracts: 2,500
+   -  Deployment and further tests on Testnet/Mainnet: 1,500
   
-  ### Total Costs: (9,000 + 5,000 = 14,000 USDC)
+  ### Total Costs: (6,000 + 7,000 = 13,000 USDC)
 
 ## [Section 6] Extended Scope
 
-We plan to go big enough to make VIMz an standard as a trustless alternative of the C2PA initiative. So, after successfully porting the VIMz to a mainstream EVM, we will starting approaching art and photography marketplaces along with news industry to integrate VIMz with their infrastructure.  
-
--  **Future Plans:**
-
-Explain how you intend to extends, enhances the projects after the initial development phase. Include any plans for collaboration or integration with other projects in the ecosystem, If relevant.
+ **Future Plans:** We plan to go big enough to make VIMz an standard as a trustless alternative of the C2PA initiative. So, after successfully porting the VIMz to a mainstream EVM, we will starting approaching art and photography marketplaces along with news industry to integrate VIMz with their infrastructure. Finally, we plan to launch the first ever authentic trustless media marketplace on the ecosystem. 
