@@ -110,7 +110,7 @@ Following, are some of the recent related projects that core memebers built with
 
   
 
->  **We have three active team mebers and working on both milestones will start simultaneously. So, we expect to achieve both milestones by the end of 2 months.**
+>  **We have three active team mebers and working on both milestones will start simultaneously. So, we expect to achieve both milestones within the time window of 2 months.**
   
 
 ### Milestone 1 — Support of Selective Transformations
