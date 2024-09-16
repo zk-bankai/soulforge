@@ -10,7 +10,7 @@
 
 -  **Payment Details:** Provide your wallet address for USDC (on Polygon Network).
 
--  **Total Amount Requested:** (e.g., 12,000 USDC)
+-  **Total Amount Requested:** 14,000
 
   
 
