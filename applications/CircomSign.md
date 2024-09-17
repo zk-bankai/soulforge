@@ -4,9 +4,9 @@
 
 ## [Section 1] Project Information
 
-** - Project Name: CircomSign
+** - Project Name**: CircomSign
  - Payment Details: 0x01e22b9d0281fc1ff17f97ddd3fb5131c2162cad (USDC ERC20)
- - Total Amount Requested: 15,000 USDC **
+ - Total Amount Requested: 15,000 USDC 
 
 
 
