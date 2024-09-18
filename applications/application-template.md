@@ -126,7 +126,7 @@ Share any relevant previous work or research that highlights your expertise.
 -  **Costs:** (e.g., 4,000 USDC)
 
   
-  ### Total Costs: (e.g. 8,000+4,000 = 12,000 USDC)
+  ### Total Costs: (e.g. 8,000+ 4,000 = 12,000 USDC)
 
 ## [Section 6] Extended Scope
 

@@ -99,6 +99,7 @@ This project brings enhanced privacy and security to the online classified ad ec
   - Deployment and hosting costs: 500 USDC
 
 ### Total Costs:** [To be calculated based on milestone costs]
+  - 15,000 USDC
 
 ## [Section 6] Extended Scope**
 - **Future Plans:**
