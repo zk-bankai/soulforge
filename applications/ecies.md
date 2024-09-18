@@ -12,9 +12,23 @@
 
 ### **Brief Description:**
 
-The Elliptic Curve Integrated Encryption Scheme (ECIES) is a hybrid encryption scheme that combines ECC-based asymmetric cryptography with symmetric ciphers to provide data encryption. It uses a public key and a secret random scalar for encryption, and the corresponding EC private key and public representation of the secret random scalar for decryption. A Message Authentication Code (MAC) is included to ensure the integrity of the encrypted message.
+The Elliptic Curve Integrated Encryption Scheme (ECIES) is a hybrid encryption scheme that combines ECC-based asymmetric cryptography with symmetric ciphers to provide data encryption. It uses a public key and a secret random scalar for encryption, and the corresponding EC private key and public representation of the secret random scalar for decryption. A Message Authentication Code (MAC) is included to ensure the integrity of the encrypted message. All the components required are used in the following way: 
+
+![ecies](./images/ecies/ecies.png)
 
 The project aims to optimize the ECIES implementation for decentralized environments, improving user experience in scenarios like marketplaces, auctions, and secure data exchange. It also addresses deadlock situations in information sharing by using ZKP to incentivize secure message sharing.
+
+This protocol will also be used in a sample app to demonstrate the capabilities of ECIES. The app is a Zk-powered vanity address generator that only makes use of on-chain interactions to mine and generate vanity address while also revealing nothing about the mined private key or the generated vanity address. The sequence diagram is shown below:
+
+![On chain interactions bewteen user, contract, and miner in Zanity](./images/ecies/zanity-sequence.png)
+
+The flow is as follows: 
+1. The user submits a request to generate the vanity address. He provides the vanity address pattern he wants, and his own public key along with payment for the work done by the miner. 
+2. The contract accepts the user's request and emits an event for the miner.
+3. The miner mines another private key such that when converted to a pubkey and added to the user's pubkey, will generate the user's vanity address. 
+4. The miner encrypts the private key with the user's pubkey using ECIES. (The user's pubkey is used to derive a shared secret using ECDH and is later encrypted using AES-CTR).
+5. The encrypted message and proof of encryption are submitted on chain. If the proof of encryption is correct then an event is emitted containing the encrypted messsage. 
+6. The user decrypts this message (as he can derive the shared secret as well) and use result of adding his private key and the decrypted private key to generate the vanity address. 
 
 ### **Core Idea:**
 
