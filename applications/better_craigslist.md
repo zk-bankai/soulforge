@@ -3,7 +3,7 @@
 ## [Section 1] Project Information
 - **Project Name:** A Better Craigslist with ZK Email
 - **Payment Details:** [Wallet address for USDC on Polygon Network needs to be provided]
-- **Total Amount Requested:** [Amount needs to be specified]
+- **Total Amount Requested:** 15000 USDC
 
 ## [Section 2] Project Overview :page_facing_up:
 - **Brief Description:**
