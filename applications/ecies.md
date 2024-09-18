@@ -30,6 +30,10 @@ The flow is as follows:
 5. The encrypted message and proof of encryption are submitted on chain. If the proof of encryption is correct then an event is emitted containing the encrypted messsage. 
 6. The user decrypts this message (as he can derive the shared secret as well) and use result of adding his private key and the decrypted private key to generate the vanity address. 
 
+In an in-depth flow chart of how the encryption is provided below: 
+
+![encryption](./images/ecies/encryption.png)
+
 ### **Core Idea:**
 
 The primary goal is to implement a production-grade ECIES encryption scheme with Zero-Knowledge Proofs (ZKP) in Circom, optimized to reduce the number of constraints and operations. This eliminates the need for a separate key exchange protocol, requiring only the recipient's public key for message encryption. The addition of ZKP allows proving that the message is encrypted using the recipient's public key and meets predefined requirements without revealing the content.
