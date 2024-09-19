@@ -31,6 +31,18 @@ To address the prover complexity in _"proofs of media provenance,"_ we utilized 
 
 Our tests show that VIMz is fast and efficient on both the prover and verifier sides. For example, you can prove transformations on **8K (33MP) images** using just **a mid-range laptop**, hitting a peak memory usage of **10 GB**. Verification takes **less than 1 second**, and proof sizes come in at **under 11 KB** no matter the resolution. Plus, the low complexity of VIMz means you can prove multiple transformations in parallel, boosting performance by up to **3.5x** on the same machine.
 
+Following table provides performance measurements of VIMz executed separately on two different devices (Core-i5 Laptop and a Ryzen 9 Server), while proving transformations on an HD resolution image. More detailed analysis are available in the paper:
+
+| Transformation | Mid-range Laptop<br>(Key. Gen.) | Mid-range Laptop<br>(Proving) | Server<br>(Key. Gen.) | Server<br>(Proving) | Peak<br>Memory |
+|:--------------:|:-------------------------------:|:-----------------------------:|:---------------------:|:-------------------:|:--------------:|
+| Crop           |              3.8 s              |            187.1 s            |         3.5 s         |       133.0 s       |     0.7~GB     |
+| Resize         |              11.5 s             |            187.0 s            |         6.6 s         |       135.7 s       |     2.5 GB     |
+| Contrast       |              11.7 s             |            479.4 s            |         6.5 s         |       371.7 s       |     2.4 GB     |
+| Grayscale      |              8.2 s              |            279.6 s            |         3.7 s         |       240.6 s       |     1.3 GB     |
+| Brightness     |              11.3 s             |            474.0 s            |         6.5 s         |       372.5 s       |     2.4 GB     |
+| Sharpness      |              11.8 s             |            614.1 s            |         6.8 s         |       455.8 s       |     2.8 GB     |
+| Blur           |              11.5 s             |            555.3 s            |         6.6 s         |       406.0 s       |     2.5 GB     |
+
 VIMz is fully open-source and available on our [GitHub repository](https://github.com/zero-savvy/vimz). The repo is organized into several key directories:
 
 > [!NOTE]  
