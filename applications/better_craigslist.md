@@ -1,38 +1,47 @@
-# A Better Craigslist with ZK Email
-
+# Enhancing zkEmail with Plonky3: Advanced Features for Decentralized Systems
 ## [Section 1] Project Information
-- **Project Name:** A Better Craigslist with ZK Email
-- **Payment Details:** 0x0ed18cFf1e16Db3f8b76D05c84182E4849ab03D4
-- **Total Amount Requested:** 15000 USDC
+
+Project Name: Enhancing zkEmail with Plonky3: Advanced Features for Decentralized Systems
+Payment Details: 0x0ed18cFf1e16Db3f8b76D05c84182E4849ab03D4
+Total Amount Requested: 15,000 USDC
 
 ## [Section 2] Project Overview :page_facing_up:
-- **Brief Description:**
-This project aims to create an improved version of Craigslist using ZK Email technology. It addresses current issues with Craigslist such as safety concerns, privacy risks, and platform clutter by leveraging zero-knowledge proofs for enhanced user privacy and security. The project is exciting because it combines the widespread utility of a platform like Craigslist with cutting-edge cryptographic techniques to create a safer, more efficient online marketplace.
 
-- **Core Idea:**
-The core innovation is the integration of ZK Email verification into a Craigslist-like platform. This allows for secure, anonymous user verification without exposing personal data. Key components include a ZK Email Verifier, ERC-721 token minting for user identity, and an anonymous posting system. This architecture ensures user privacy while maintaining platform integrity.
+Brief Description:
+This project aims to enhance zkEmail by developing new features and improvements using Plonky3, specifically tailored for decentralized systems with a focus on C2C marketplaces. We will expand zkEmail's capabilities to address data integrity, censorship resistance, and privacy, while pushing the boundaries of Plonky3's application in practical scenarios.
 
-- **Technology Stack:**
-  - Frontend: Next.js
-  - Backend: Node.js with Express
-  - Authentication: Auth0/Firebase
-  - Database: PostgreSQL/MySQL, MongoDB
-  - Caching: Redis
-  - Search Engine: Elasticsearch/Algolia
-  - Blockchain: Ethereum (for ERC-721 tokens)
-  - ZK Proofs: Circom
-  - Cryptography: RSA, SHA
-  - Privacy Layer: Polygon Network 
+Core Idea:
+The primary goal is to extend zkEmail's functionality by implementing:
 
-- **Design Mockups/Prototypes:**
-Google Slides Deck: https://docs.google.com/presentation/d/1DpBjevrsX0JbfOUfDmSt1lKTNH_XKoSt7tbtwGCr96M/edit?usp=sharing
+- Enhanced data integrity verification for email attachments using Plonky3
+- Censorship-resistant email content verification with Plonky3's recursive proofs
+- Privacy-preserving reputation systems based on email interactions using Plonky3's lookup arguments
+- Develop a hybrid Plonky3-Circom system for optimized performance in zkEmail verifications
+
+These improvements will be developed as modular components that can be integrated into various applications, with C2C markets as a primary use case.
+
+Technology Stack:
+
+- Plonky3 for developing high-performance ZK circuits
+- Circom for compatibility with existing zkEmail components and additional circuit development
+- Typescript for testing and integration
+- Solidity for on-chain components (if necessary)
+- Rust for performance-critical operations
 
 ## [Section 3] Ecosystem Fit
-- **Similar Projects:**
-While there are existing classified ad platforms and blockchain-based marketplaces, this project uniquely combines ZK Email verification with a familiar Craigslist-like interface.
 
-- **Unique Contribution:**
-This project brings enhanced privacy and security to the online classified ad ecosystem through zero-knowledge proofs. It addresses critical issues in existing platforms while maintaining ease of use, potentially setting a new standard for secure online marketplaces.
+Similar Projects:
+While zkEmail provides a foundation for email-based verification, our project focuses on extending its capabilities using Plonky3, specifically for decentralized marketplace scenarios.
+
+Unique Contribution:
+This project will contribute to both the zkEmail and Plonky3 ecosystems by:
+
+- Developing new Plonky3 circuits for verifying the integrity of email attachments without revealing content
+- Creating a censorship-resistant method for email content verification using Plonky3's recursive proofs
+- Implementing a privacy-preserving reputation system based on email interactions using Plonky3's lookup arguments
+- Providing comprehensive documentation and examples for integrating these new Plonky3-based features into decentralized applications
+- Pioneering the integration of Plonky3 with zkEmail, potentially setting a new standard for performance in email-based ZK applications
+- Developing novel techniques for using Plonky3's unique features in the context of email verification
 
 ## [Section 4] Team :busts_in_silhouette:
 - **Team Members:** Yash Bharti, Krishanu Dhar
@@ -43,11 +52,10 @@ This project brings enhanced privacy and security to the online classified ad ec
   - **Name:** Krishanu Dhar
   - **Email:** rony.kris@gmail.com
 
-
 - **Prior Work/Research Yash:**
-  - Experience writing Noir Circuits with PSE Grant
-  - Porting Circuits from Circom to Noir
-  - Developed Binary Incremental Merkle Tree, ECDSA in Noir
+  - Experience writing Circom Circuits
+  - Porting Circuits between different ZK frameworks
+  - Developed Binary Incremental Merkle Tree, ECDSA in Circom
   - Aztec Alpha Build Program - Wallet, Account Abstraction, Fee Paymasters
   - Rust - Distributed Systems
   - Smart Contracts with Solidity
@@ -55,56 +63,63 @@ This project brings enhanced privacy and security to the online classified ad ec
   - NYU BA CS '22, University of Cambridge - MPhil (CBL Lab) - Deferred 2025
   - AI Research Background - Deep Reinforcement Learning for Robotics, Natural Language Understanding, Cognitive Science
 
-
 - **Prior Work/Research Krish:** 
    -  Full stack, smart contract and zkp developer
    -  6+ years in web3
    -  Solidity developer on EVM chains
    -  ZK circuits developer in Mina, and Aztec
    -  Built zkpoker on EVM with solidity and zokrates
-   -  zknonogram and zkuno using Noir on Aztec
+   -  Experienced in Circom for ZK circuit development
    -  GitHub: https://github.com/ronykris
-   
 
 ## [Section 5] Development Roadmap :open_book:
+### Milestone 1 — Research and Circuit Development
 
-### Milestone 1 — Planning and Initial Development
-- **Estimated Duration:** 1 month
-- **Description:** 
-  - Project planning and environment setup
-  - Write Circom Circuits  for ZKEmail
-  - Develop ZK Email Verifier with RSA/SHA integration
-  - Implement Regex check for KYC
-  - Develop client-side proving functions in Circom
-- **FTE:** 1 FTE
-- **Costs:** 
-  - Costs: 7,500 USDC
-    - Development labor: 6,000 USDC
-    - Software licenses and tools: 1,000 USDC
-    - Miscellaneous expenses: 500 USDC
+Estimated Duration: 1 month
+Description:
 
-### Milestone 2 — Integration and Deployment
-- **Estimated Duration:** 1 month
-- **Description:**
-  - Generate and integrate ERC-721 tokens
-  - Complete integration with Polygon Network
-  - Comprehensive testing of all components
-  - Deploy ZK Email Verifier and related components
-  - Finalize documentation and user guides
-- **FTE:** 1 FTE
-- **Costs:**
-  - Costs: 7,500 USDC
-  - Development labor: 6,000 USDC
-  - Testing and quality assurance: 1,000 USDC
-  - Deployment and hosting costs: 500 USDC
+- Research and design new Plonky3 circuits for email attachment integrity verification
+- Develop prototype Plonky3 circuits for censorship-resistant content verification using recursive proofs
+- Design privacy-preserving reputation system leveraging Plonky3's lookup arguments
+- Create a hybrid Plonky3-Circom system for optimized zkEmail verifications
+- Conduct comparative analysis between Plonky3 and Circom implementations for zkEmail
+- Create test suite for new zkEmail features
 
-### Total Costs:** [To be calculated based on milestone costs]
-  - 15,000 USDC
+FTE: 1 FTE
+Costs: 7,500 USDC
 
-## [Section 6] Extended Scope**
-- **Future Plans:**
-  - Enhance the platform's UI/UX based on user feedback
-  - Expand the types of verifiable credentials beyond email
-  - Integrate with other blockchain networks for increased interoperability
-  - Develop mobile applications for iOS and Android
-  - Explore partnerships with existing online marketplaces for potential integration of our ZK Email verification system
+- Development labor: 6,000 USDC
+- Software licenses and tools: 1,000 USDC
+- Miscellaneous expenses: 500 USDC
+
+### Milestone 2 — Implementation and Integration
+
+Estimated Duration: 1 month
+Description:
+
+- Implement and optimize new Plonky3 circuits
+- Integrate Plonky3 features into the zkEmail protocol
+- Develop example implementations showcasing Plonky3's advantages in zkEmail scenarios, particularly for C2C markets
+- Create comprehensive documentation for new Plonky3-based features
+- Conduct security audits and performance benchmarks, comparing Plonky3 to existing Circom solutions
+
+FTE: 1 FTE
+Costs: 7,500 USDC
+
+- Development labor: 6,000 USDC
+- Testing and quality assurance: 1,000 USDC
+- Documentation and deployment costs: 500 USDC
+
+### Total Costs: 15,000 USDC
+## [Section 6] Extended Scope
+
+Future Plans:
+
+- Explore advanced applications of Plonky3's recursive proofs in complex email-based verification scenarios
+- Develop a library of optimized Plonky3 circuits for various email verification tasks
+- Contribute improvements and optimizations back to the Plonky3 project based on our findings
+- Investigate the potential for Plonky3 to enable new forms of private, verifiable communication beyond email
+- Explore integration with other privacy-preserving technologies (e.g., Fully Homomorphic Encryption)
+- Develop additional features for zkEmail based on community feedback
+- Create educational resources on implementing Plonky3-enhanced zkEmail in various Web3 applications
+- Collaborate with other projects to establish standards for high-performance, Plonky3-based email verification in decentralized systems
