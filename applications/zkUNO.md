@@ -18,11 +18,9 @@
 
 -  **Brief Description:**
 
-Provide a short summary of your project, including its relationship to **Plonky3** or **CIRCOM** and why it excites you. This should include key goals and the objective of the grant.
-
 zkUNO is an innovative blockchain-based adaptation of the popular UNO card game, leveraging zero-knowledge proofs to ensure privacy, fairness, and transparency in gameplay. It will be built on zkVM/zkEVM and  **Plonky3** will be used to write the game's proofing mechanisms, ensuring that sensitive information, like players' hands and the deck, remains confidential. 
 
-The project excites us because it represents a significant leap forward in decentralized card gaming, providing a fair, tamper-proof, and privacy-preserving experience. Our **objective with this grant is to rewrite the contract and implement the prooving system using Plonky3, Circom**. This is an effort to fully realize zkUNO's potential as a **reference architecture** for privacy-focused decentralized card games, driving **broader adoption** of both the game and the underlying technology.
+The project excites us because it represents a significant leap forward in decentralized card gaming, providing a fair, tamper-proof, and privacy-preserving experience. Our **objective with this grant is to rewrite the contract and implement the proving system using Plonky3**. This is an effort to fully realize zkUNO's potential as a **reference architecture** for privacy-focused decentralized card games, driving **broader adoption** of both the game and the underlying technology.
 
 The goals we'd like to achieve by the end of the grant period are:
 
@@ -35,13 +33,11 @@ The goals we'd like to achieve by the end of the grant period are:
 
 -  **Core Idea:**
 
-Describe the primary goal or innovation of your project. What’s the key component or architecture? Be concise yet detailed enough to showcase the essence of the idea.
-
-The primary goal of zkUNO is to create a fully decentralized and privacy-preserving version of the UNO card game on chain. The core innovation lies in zkUNO’s **hybrid architecture**, which integrates on-chain game logic with an advanced off-chain proving system. The game logic—covering actions such as shuffling, dealing, and turn management will be implemented directly on-chain using Solidity, ensuring transparency and preventing tampering. The **privacy layer** is powered by **Plonky3**, a cutting-edge zero-knowledge proof system, which generates proofs that verify game actions, including the cryptographic shuffling of the deck, without revealing sensitive information like players' hands and the order of the deck.
+The primary goal of zkUNO is to create a fully decentralized and privacy-preserving version of the UNO card game on chain. The core innovation lies in zkUNO’s **hybrid architecture**, which integrates on-chain game logic with an advanced off-chain proving system. The game logic covering actions such as shuffling, dealing, and turn management will be implemented directly on-chain using Solidity, ensuring transparency and preventing tampering. The **privacy layer** is powered by **Plonky3**, a cutting-edge zero-knowledge proof system, which generates proofs that verify game actions, including the cryptographic shuffling of the deck, without revealing sensitive information like players' hands and the order of the deck.
 
 Key components of this architecture include:
 
-**On-chain Smart Contracts:** The core game mechanics will be implemented in Solidity on zkEVM.
+**On-chain Smart Contracts:** The core game mechanics will be implemented in Solidity
 
 **Plonky3 Proving System:** This will be used off-chain to generate zero-knowledge proofs for game actions, including deck shuffling and hand validation, ensuring privacy.
 
@@ -49,24 +45,20 @@ Key components of this architecture include:
 
 **Optimistic UI:** This will aggregate player actions off-chain and commit them in batches to the blockchain, improving efficiency.
 
-This approach ensures that no player can gain an unfair advantage, as the game state remains transparent and verifiable to all participants while keeping critical game data confidential. Excited to build this project because we and our social media followers believe that it not only **showcases the potential of zero-knowledge proofs in real-world applications** but also aims to serve as a **reference architecture for future blockchain based card games**, driving broader adoption of the technology.
+This approach ensures that no player can gain an unfair advantage, as the game state remains transparent and verifiable to all participants while keeping critical game data confidential. Excited to build this project because we and our social media followers believe that it will not only **showcase the potential of zero-knowledge proofs in real-world applications** but also aims to serve as a **reference architecture for future blockchain based card games**, driving broader adoption of the technology.
 
 
 -  **Technology Stack:**
-
-List the technologies, tools, platforms, and frameworks you plan to use in your project.
 
   Frontend: nextJS
   Backend: websockets
   Smart contract: Solidity
   Prover circuit: Plonky3
-  L2 Chain: zkVM / zkEVM
+  L2 Chain: Polygon
   Transaction cache: Redis
 
 
 -  **Design Mockups/Prototypes (Optional):**
-
-Attach any design files or prototypes if available.
 
 The card game will be built in a hybrid architecture mode where the game logic will reside onchain while some of the validation / verification ops will happen off chain. The state management across clients will be through websockets and will be sync'd peridocally to the chain. 
 
@@ -112,15 +104,11 @@ Below are the high level blocks of the dapp:
 
 -  **Similar Projects:**
 
-Mention any similar projects [If any exists], How is the idea of this project different or better?
-
 As of today, a game of UNO does not exist in web3. This is an effort to take the next big leap in card gaming. We have built a prototype (without zk proofs) already. In this grant we plan to re-write parts of the contract and build the proving and verifier system using ***plonky3***.
 [zkUNO](https://gameofuno.vercel.app/) | [GitHub](https://github.com/ronykris/gameofuno) | [ X (Twitter)](https://x.com/zk_UNO) 
   
 
 -  **Unique Contribution:**
-
-Explain the unique value your project brings to the **Plonky3** or **CIRCOM** ecosystem. What gaps does it fill?
 
 zkUNO brings significant value to the **Plonky3** ecosystem by demonstrating the practical application of zero-knowledge proofs in a real-time, interactive gaming environment. Here’s how it contributes uniquely:
 
@@ -137,8 +125,6 @@ zkUNO brings significant value to the **Plonky3** ecosystem by demonstrating the
   
 
 -  **Team Members:**
-
-List the names of all team members (separated by commas).
 
 Saurabh, Krishanu, Nikhil, Ayush
 
@@ -211,9 +197,7 @@ Share any relevant previous work or research that highlights your expertise.
 
 -  **Future Plans:**
 
-Explain how you intend to extends, enhances the projects after the initial development phase. Include any plans for collaboration or integration with other projects in the ecosystem, If relevant.
-
-We could enjoy the first mover advantage with zkUNO and our social media presence is promising too [ X (Twitter)](https://x.com/zk_UNO). To super charge distribution we also have a telegram bot built [Telegram](https://t.me/zkcard_bot). Therefore, our goal os to take this app to the next level and be the pioneers of decentralised card gaming. Post the MVP we'd have to spend considerable time 
+We could enjoy the first mover advantage with zkUNO and our social media presence is promising too [ X (Twitter)](https://x.com/zk_UNO). To super charge distribution we also have a telegram bot built [Telegram](https://t.me/zkcard_bot). Therefore, our goal is to take this app to the next level and be the pioneers of decentralised card gaming. Post the MVP we'd have to spend considerable time 
 * testing and fixing bugs
 * run benchmarks to ascertain performance (**Plonky3** should give us better results)
 * a better user experience 
