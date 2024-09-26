@@ -11,11 +11,28 @@ Brief Description:
 This project aims to enhance zkEmail by developing new features and improvements using Plonky3, specifically tailored for decentralized systems with a focus on C2C marketplaces. We will expand zkEmail's capabilities to address data integrity, censorship resistance, and privacy, while pushing the boundaries of Plonky3's application in practical scenarios.
 
 Core Idea:
-The primary goal is to extend zkEmail's functionality by implementing:
+The primary goal is to extend zkEmail's functionality by implementing the following use cases:
 
 - Enhanced data integrity verification for email attachments using Plonky3
+  - Experiment with following attachment formats: PDF, DOCX, PNG, JPEG
+    - Convert attachments to binary
+    - Hash the binary data (SHA-256)
+    - Write circuit in plonky3 to generate proof & verifier (input: computed_hash, generated_hash)
+    
 - Censorship-resistant email content verification with Plonky3's recursive proofs
+  - Hash the email content
+  - Write circuit to generate proof of the email content
+  - Use plonky3's recursive proof to chain proofs of emails 
+  - Chain the proofs to generate a final proof and verifier 
+
 - Privacy-preserving reputation systems based on email interactions using Plonky3's lookup arguments
+  - Gather interaction data (data in email interactions such as the number of emails sent/received, response times, content length, etc.).
+  - Remove PII from the interaction data
+  - Combine various interaction metrics into a single score
+  - Implement a circuit that aggregates the interaction data into a numerical score that reflects the user's reputation
+  - Create a lookup table of reputation scores and levels
+  - Implement a circuit to generate a proof of the user claimed score and the reputation score
+
 - Develop a hybrid Plonky3-Circom system for optimized performance in zkEmail verifications
 
 These improvements will be developed as modular components that can be integrated into various applications, with C2C markets as a primary use case.
