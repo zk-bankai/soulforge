@@ -61,13 +61,15 @@ This project will contribute to both the zkEmail and Plonky3 ecosystems by:
 - Developing novel techniques for using Plonky3's unique features in the context of email verification
 
 ## [Section 4] Team :busts_in_silhouette:
-- **Team Members:** Yash Bharti, Krishanu Dhar
+- **Team Members:** Yash Bharti, Krishanu Dhar, Rute Figueiredo
 
 - **Contact Information:**
   - **Name:** Yash Bharti
   - **Email:** yashbharti924@gmail.com
   - **Name:** Krishanu Dhar
   - **Email:** rony.kris@gmail.com
+  - **Name:** Rute Figueiredo
+  - **Email:** rfigueiredo.dev@gmail.com
 
 - **Prior Work/Research Yash:**
   - Experience writing Circom Circuits
@@ -88,6 +90,15 @@ This project will contribute to both the zkEmail and Plonky3 ecosystems by:
    -  Built zkpoker on EVM with solidity and zokrates
    -  Experienced in Circom for ZK circuit development
    -  GitHub: https://github.com/ronykris
+ 
+
+- **Prior Work/Research Rute:** 
+  - Implementation of a ZK Compiler and work on optimisations for zkDSL with Rust
+  - Good understanding of Halo2 and Circom functionality and source code
+  - Smart Contracts with Solidity and Cairo
+  - Fullstack development for several relevant web applications with high user traffic
+  - GitHub: https://github.com/rutefig
+
 
 ## [Section 5] Development Roadmap :open_book:
 ### Milestone 1 — Research and Circuit Development
