@@ -55,6 +55,36 @@ The primary goal is to implement a production-grade ECIES encryption scheme with
 
 https://hackmd.io/zGQFexzNR-2T4sW_trO8AQ : contains a detailed explanation and implementation procedure.
 
+### **References:**
+
+- ECIES specification can be found at:
+1. https://cryptobook.nakov.com/asymmetric-key-ciphers/ecies-public-key-encryption
+2. Simplified version of the explanation can be found here : https://hackmd.io/zGQFexzNR-2T4sW_trO8AQ#ECIES-Encryption-Scheme-Specifications
+
+- Official implementation for in golang can be found here : https://github.com/ecies/go
+
+- Profanity-V2 maintained by 1Inch which Zanity will be benchmarked against can be found here : https://github.com/1inch/profanity2
+
+- [AES Specs](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf)
+- [HMAC RFC 2104](https://datatracker.ietf.org/doc/html/rfc2104)
+- [KDF](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar3.pdf)
+
+### **Security considerations:**
+- ECIES
+  - ECIES will provide a channel for two parties to exchange information taking full advantage of the already widely adopted ethereum wallets and ecsda keys
+  - ZK proofs will ensure the correctness of encryption which will reduces trust assumptions during a data exchange session.
+  - AES with CTR mode is core encryption algorithm . We are using our own implementation here at : https://github.com/crema-labs/aes-circom
+    -  This is peer reviewed by [Pluto](https://pluto.xyz) : https://github.com/pluto/aes-proof/pull/35
+    -  Key derivation was reviewed and improved by core zk folks from 0glabs : https://github.com/crema-labs/aes-circom/pull/7
+- Zanity(example use case)
+  - Zanity is an example implementation of ECIES for out sourcing generation of vanity address
+  - In Zanity only the user requesting for the vanity address will be able to generate the private key of vanity address for a particular chain.
+  - A spiteful miner can only cause the resultant vanity public key to be revealed thus we suggest users to assume that their custom vanity address will be public.
+  - To obscure the creator of this request to be linked back to the vanity address we recommend using various relayer options available for ethereum and other chains.
+  - We are ideating a very cool implementation to secure ,via obscurity, the vanity address where a user shares commitments for public key via `g^x` and `g^y` and the miner will be forced to call calculate `g^xm` and `g^ym` where the point addition with corresponding pairing of these commitments with will be compared with the target vanity commitments `g^xt` and `gyt`. This will ensure that even the miner does not know the public key of the vanity address.
+  - Fundamental FHE libraries don't exist for achieving this on circom and will take lot of efforts to make them performant thus are planned to be implemented in future.
+
+
 ## [Section 3] Ecosystem Fit
 
 This project brings several unique contributions to the Circom ecosystem:
