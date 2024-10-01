@@ -11,19 +11,19 @@ Brief Description:
 This project aims to enhance zkEmail by developing new features and improvements using Plonky3, specifically tailored for decentralized systems with a focus on C2C marketplaces. We will expand zkEmail's capabilities to address data integrity, censorship resistance, and privacy, while pushing the boundaries of Plonky3's application in practical scenarios.
 
 Core Idea:
-The primary goal is to extend zkEmail's functionality by implementing the following use cases:
+The primary goal is to extend zkEmail's functionality by implementing the following features:
 
 - Enhanced data integrity verification for email attachments using Plonky3
-  - Experiment with following attachment formats: PDF, DOCX, PNG, JPEG
-    - Convert attachments to binary
-    - Hash the binary data (SHA-256)
-    - Write circuit in plonky3 to generate proof & verifier (input: computed_hash, generated_hash)
-    
+  - Experiment with most of the attachment formats
+    - Write circuit in plonky3 to encode/decode base64 attachments from emails
+    - Use zk-regex to parse the attachments and verify the content
+    - Point out performance bottlenecks for future research and improvements
+
 - Censorship-resistant email content verification with Plonky3's recursive proofs
   - Hash the email content
-  - Write circuit to generate proof of the email content
-  - Use plonky3's recursive proof to chain proofs of emails 
-  - Chain the proofs to generate a final proof and verifier 
+  - Port some of the existing circuits written in Circom to Plonky3
+  - Use plonky3's recursive proof to chain proofs of several emails
+  - Chain the proofs to generate a final proof and verifier
 
 - Privacy-preserving reputation systems based on email interactions using Plonky3's lookup arguments
   - Gather interaction data (data in email interactions such as the number of emails sent/received, response times, content length, etc.).
@@ -53,8 +53,8 @@ While zkEmail provides a foundation for email-based verification, our project fo
 Unique Contribution:
 This project will contribute to both the zkEmail and Plonky3 ecosystems by:
 
-- Developing new Plonky3 circuits for verifying the integrity of email attachments without revealing content
-- Creating a censorship-resistant method for email content verification using Plonky3's recursive proofs
+- Implementing new Plonky3 circuits responsible for decoding base64 attachments allowing to run regex inside of the attachments, as requested on zkEmail's GitHub as one of the Research Ideas and pointed out as a performance bottleneck in the current implementation on [Issue 13](https://github.com/zkemail/zk-email-verify/issues/13)
+- Creating a censorship-resistant method for email content verification using Plonky3's recursive proofs as improving performance on some of the current circuits written in Circom
 - Implementing a privacy-preserving reputation system based on email interactions using Plonky3's lookup arguments
 - Providing comprehensive documentation and examples for integrating these new Plonky3-based features into decentralized applications
 - Pioneering the integration of Plonky3 with zkEmail, potentially setting a new standard for performance in email-based ZK applications
