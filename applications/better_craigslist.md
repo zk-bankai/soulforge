@@ -23,15 +23,7 @@ The primary goal is to extend zkEmail's functionality by implementing the follow
   - Hash the email content
   - Port some of the existing circuits written in Circom to Plonky3
   - Use plonky3's recursive proof to chain proofs of several emails
-  - Chain the proofs to generate a final proof and verifier
-
-- Privacy-preserving reputation systems based on email interactions using Plonky3's lookup arguments
-  - Gather interaction data (data in email interactions such as the number of emails sent/received, response times, content length, etc.).
-  - Remove PII from the interaction data
-  - Combine various interaction metrics into a single score
-  - Implement a circuit that aggregates the interaction data into a numerical score that reflects the user's reputation
-  - Create a lookup table of reputation scores and levels
-  - Implement a circuit to generate a proof of the user claimed score and the reputation score
+  - Chain the proofs to generate a final proof and verify
 
 - Develop a hybrid Plonky3-Circom system for optimized performance in zkEmail verifications
 
@@ -108,9 +100,8 @@ Description:
 
 - Research and design new Plonky3 circuits for email attachment integrity verification
 - Develop prototype Plonky3 circuits for censorship-resistant content verification using recursive proofs
-- Design privacy-preserving reputation system leveraging Plonky3's lookup arguments
 - Create a hybrid Plonky3-Circom system for optimized zkEmail verifications
-- Conduct comparative analysis between Plonky3 and Circom implementations for zkEmail
+- Conduct comparative analysis (with benchmarking) between Plonky3 and Circom implementations for zkEmail
 - Create test suite for new zkEmail features
 
 FTE: 1 FTE
@@ -143,7 +134,7 @@ Costs: 7,500 USDC
 
 Future Plans:
 
-- Explore advanced applications of Plonky3's recursive proofs in complex email-based verification scenarios
+- Explore advanced applications of Plonky3's recursive proofs in complex email-based verification scenarios (this will open the door for many use cases be solved in a more private way)
 - Develop a library of optimized Plonky3 circuits for various email verification tasks
 - Contribute improvements and optimizations back to the Plonky3 project based on our findings
 - Investigate the potential for Plonky3 to enable new forms of private, verifiable communication beyond email
