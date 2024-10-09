@@ -25,29 +25,27 @@
 
 **Core Components and Architecture:**
 
-    - **Data Extraction and Validation (PoC available)**:
-      - **Libraries and Applications**: Develop libraries in Javascript and Python to extract data from the Firma Digital certificate and validate signatures issued by the Certification Authority (CA).
+- **Data Extraction and Validation (PoC available)**:
+  - **Libraries and Applications**: Develop libraries in Javascript and Python to extract data from the Firma Digital certificate and validate signatures issued by the Certification Authority (CA).
 
-      - **Certificate Validation:** Ensure that the certificate information and signature are authentic and belong to a Costa Rican resident and citizen.
+  - **Certificate Validation:** Ensure that the certificate information and signature are authentic and belong to a Costa Rican resident and citizen.
 
-    - **Zero-Knowledge Proof Generation (PoC available)**:
-      - **Data Extraction for ZK Proofs**: Extract necessary information from Firma Digital certificates to generate zero-knowledge proofs for identity.
-      - **Off-Chain Management**: Manage identity validation off-chain (via web interfaces).
+- **Zero-Knowledge Proof Generation (PoC available)**:
+  - **Data Extraction for ZK Proofs**: Extract necessary information from Firma Digital certificates to generate zero-knowledge proofs for identity.
+  - **Off-Chain Management**: Manage identity validation off-chain (via web interfaces).
 
-    - **User Interfaces (To improve)**:
-      - **Graphical Interfaces**: Develop intuitive graphical interfaces for users and administrators to interact with the system seamlessly.
-    - **Allow users to anonymously participate in voting proposals (TODO)**.
-    - **Integration with Polygon Blockchain (TODO)**.
+- **User Interfaces (To improve)**:
+  - **Graphical Interfaces**: Develop intuitive graphical interfaces for users and administrators to interact with the system seamlessly.
+- **Allow users to anonymously participate in voting proposals (TODO)**.
+- **Integration with Polygon Blockchain (TODO)**.
 
--  **Technology Stack:**
-
-The project will employ a diverse and robust technology stack to achieve its objectives. Key technologies include:
-- **Javascript**: For developing front-end interfaces and certain back-end functionalities.
-- **Python**: For data extraction, validation, and interaction with the Firma Digital certificate system.
-- **Circom (ZK Proofs)**: To enable privacy-preserving identity verification and voting.
-- **Firma Digital**: Costa Rica’s digital identity infrastructure, providing the basis for identity verification.
-- **Polygon Blockchain**: To ensure secure, decentralized handling of identity and voting data.
-- **Solidity**: For creating smart contracts to manage identity validation and voting proposals on the Polygon blockchain. 
+-  **Technology Stack:** The project will employ a diverse and robust technology stack to achieve its objectives. Key technologies include:
+  - **Javascript**: For developing front-end interfaces and certain back-end functionalities.
+  - **Python**: For data extraction, validation, and interaction with the Firma Digital certificate system.
+  - **Circom (ZK Proofs)**: To enable privacy-preserving identity verification and voting.
+  - **Firma Digital**: Costa Rica’s digital identity infrastructure, providing the basis for identity verification.
+  - **Polygon Blockchain**: To ensure secure, decentralized handling of identity and voting data.
+  - **Solidity**: For creating smart contracts to manage identity validation and voting proposals on the Polygon blockchain. 
 
 **Design Mockups/Prototypes (Optional):**
 
