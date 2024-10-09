@@ -1,5 +1,5 @@
 
-# [ZK Firma Digital]
+# ZK Firma Digital
 
 ## [Section 1] Project Information
 
