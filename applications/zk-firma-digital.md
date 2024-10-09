@@ -78,12 +78,11 @@ Andres Gomez Ramirez, Francis Adrian Gomez Ramirez
 -  **Email:** andres.gomez@sakundi.io.
  
 
--  **Prior Work/Research (Optional):**
+-  **Prior Work/Research:**
 
-**Dr. Andres Gomez Ramirez** - https://www.linkedin.com/in/andres-gomez-ramirez-bb7226156/
-Ph.D. in cybersecurity from the University of Frankfurt and CERN. PhD thesis: Deep Learning and Isolation-Based Security for Intrusion Detection and Prevention in Grid Computing: https://cds.cern.ch/record/2686424/files/CERN-THESIS-2018-441.pdf
+**Dr. Andres Gomez Ramirez** - [Linkedin](https://www.linkedin.com/in/andres-gomez-ramirez-bb7226156/) Ph.D. in cybersecurity from the University of Frankfurt and CERN. PhD thesis: Deep Learning and Isolation-Based Security for Intrusion Detection and Prevention in Grid Computing: [Thesis](https://cds.cern.ch/record/2686424/files/CERN-THESIS-2018-441.pdf)
 
-**Francis Adrian Gomez Ramirez** - https://www.linkedin.com/in/francis-adrian-gomez-ramirez-599598138/ Specialist in project management and computer scientist.
+**Francis Adrian Gomez Ramirez** - [Linkedin](https://www.linkedin.com/in/francis-adrian-gomez-ramirez-599598138/) Specialist in project management and computer scientist.
 
 Our team possesses a rich portfolio of diverse projects, showcasing our extensive expertise across multiple domains. Andres has made significant contributions to the Tails project, the Linux-based OS that enabled Snowden to reveal NSA spying capabilities. As a developer and security researcher for Tails, Andres contributed to advancing privacy protection, which remains a core passion and area of expertise for our team.
 Our capability to undertake substantial projects is further underscored by securing an academic scientific research grant from the Ethereum Foundation, amounting to $102,000 USD. This grant facilitated the creation of Tikuna, an AI-driven security monitoring system designed for the Ethereum P2P network. This has been the only grant for scientific research provided by EF to a team in Latin America. Additionally, our active participation in the Forta network bounty demonstrates our commitment to enhancing blockchain security, by leveraging AI algorithms, we detect malicious smart contracts across Ethereum and other Layer 2 networks.
