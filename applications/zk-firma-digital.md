@@ -13,15 +13,15 @@
 
 -  **Brief Description:**
 
-The project aims to develop a zero-knowledge proof infrastructure solution for enhancing Costa Rica's digital identity system. Our goal is to strengthen citizen privacy by minimizing data collection, enabling individuals to access a wide range of valuable services without disclosing sensitive information. For this we plan to use CIRCOM and the Polygon Blockchain network.
+The project aims to develop a zero-knowledge proof infrastructure solution for enhancing Costa Rica's digital identity system. Our goal is to strengthen citizen privacy by minimizing data collection, enabling individuals to access a wide range of valuable services without disclosing sensitive information. For this we plan to use Circom and the Polygon Blockchain network.
 
-We already have developed an initial Proof-of-concept you can find here: https://github.com/kuronosec/zk-firma-digital . The project is Open Source under the Apache-2.0 license. As a next step for our project, and proposal for this grant, we want to show the capabilities of our approach by allowing Costa Rican citizens to participate in voting proposals in an anonymous way while keeping the ability to authenticate their identities and therefore proving that they are enabled to vote, all by using blockchain technologies.
+We already have developed an initial Proof-of-concept you can find here: [zk-firma-digital](https://github.com/kuronosec/zk-firma-digital) . The project is Open Source under the Apache-2.0 license. As a next step for our project, and proposal for this grant, we want to show the capabilities of our approach by allowing Costa Rican citizens to participate in voting proposals in an anonymous way while keeping the ability to authenticate their identities and therefore proving that they are enabled to vote, all by using blockchain technologies.
 
 -  **Core Idea:**
 
 The Costa Rican government offers an advanced digital identity system (Firma Digital) that allows residents or entities to sign documents with a digital identity validated by the central bank as CA and authenticate themselves on various public or private websites and services. However, there is a significant privacy concern related to sensitive data in Costa Rica. A small amount of identity information, such as a national ID number or car plate number, can lead to extensive data collection. Private companies can use this kind of data to harvest citizen data, for instance, by calling and offering them products or services without any previous request or permission. This fact is exceptionally relevant now that big corporations harvest indiscriminate user data to train AI models. Even worse, criminals are collecting this same data to perform identity theft and fraud, sometimes even making fraudulent calls from the jails.
 
-Our project aims to address these privacy issues by developing a zero-knowledge proof infrastructure using Polygon blockchain technology and ZK CIRCOM circuits. This solution will enable citizens to verify their identity and provide specific information without revealing actual personal details. By minimizing the distribution of sensitive data across various institutions and companies, we can significantly reduce the risk of data theft. Additionally, this system can authenticate users for diverse services, ensuring they are real individuals and not bots, without requiring sensitive information such as email addresses or phone numbers.
+Our project aims to address these privacy issues by developing a zero-knowledge proof infrastructure using Polygon blockchain technology and ZK Circom circuits. This solution will enable citizens to verify their identity and provide specific information without revealing actual personal details. By minimizing the distribution of sensitive data across various institutions and companies, we can significantly reduce the risk of data theft. Additionally, this system can authenticate users for diverse services, ensuring they are real individuals and not bots, without requiring sensitive information such as email addresses or phone numbers.
 
 **Core Components and Architecture:**
 
@@ -66,7 +66,7 @@ The project will employ a diverse and robust technology stack to achieve its obj
 
 We were inspired both by Anon Aadhaar and ZK Passport to create our ZK Firma Digital project. However, those projects only allow users to validate government digital signatures by QR codes and X509 certificates, while ours allow users to use their ID smart cards to also sign arbitrary data. This makes our approach even more powerful and flexible allowing different people and entities to create their own type of authenticated data taking advantage of already built PKI infrastructures. It can be extended to other countries with similar technologies other than Costa Rica.
 
-There is still no system like this in the CIRCOM ecosystem. In addition, we want to provide an integration for Verifiable Credentials and Decentralized Identities using existing PKI infrastructure, while taking advantage of the ZKP capabilities to keep sensitive information private.
+There is still no system like this in the Circom ecosystem. In addition, we want to provide an integration for Verifiable Credentials and Decentralized Identities using existing PKI infrastructure, while taking advantage of the ZKP capabilities to keep sensitive information private.
 ## [Section 4] Team :busts_in_silhouette: 
 
 -  **Team Members:**
@@ -102,7 +102,7 @@ This diverse experience, ranging from privacy-focused operating systems to AI-dr
 
 **Verifiable Credential Signature**: Enable users to sign voting data formatted as VC (JSON).
 **Signature Validation**: Validate the signed voting data and citizen’s signature to confirm authenticity and eligibility.
-**CIRCOM vote privacy**: add circuits to validate the user ability to emit votes in a proposal and then allow them to vote in an anonymous way.
+**Circom vote privacy**: add circuits to validate the user ability to emit votes in a proposal and then allow them to vote in an anonymous way.
 
 -  **FTE (Full-Time Equivalent):** 1 FTE.
 
