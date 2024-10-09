@@ -47,7 +47,7 @@
   - **Polygon Blockchain**: To ensure secure, decentralized handling of identity and voting data.
   - **Solidity**: For creating smart contracts to manage identity validation and voting proposals on the Polygon blockchain. 
 
-**Design Mockups/Prototypes (Optional):**
+**Design Mockups/Prototypes:**
 
 [authentication.png](https://github.com/kuronosec/zk-firma-digital/blob/main/images/authentication.png).
 
