@@ -23,7 +23,7 @@ The Costa Rican government offers an advanced digital identity system (Firma Dig
 
 Our project aims to address these privacy issues by developing a zero-knowledge proof infrastructure using Polygon blockchain technology and ZK CIRCOM circuits. This solution will enable citizens to verify their identity and provide specific information without revealing actual personal details. By minimizing the distribution of sensitive data across various institutions and companies, we can significantly reduce the risk of data theft. Additionally, this system can authenticate users for diverse services, ensuring they are real individuals and not bots, without requiring sensitive information such as email addresses or phone numbers.
 
-**Core Components and Architecture**
+**Core Components and Architecture:**
 
 - Data Extraction and Validation (PoC available):
   - Libraries and Applications: Develop libraries in Javascript and Python to extract data from the Firma Digital certificate and validate signatures issued by the Certification Authority (CA).
@@ -35,8 +35,8 @@ Our project aims to address these privacy issues by developing a zero-knowledge 
 
 - User Interfaces (To improve):
   - Graphical Interfaces: Develop intuitive graphical interfaces for users and administrators to interact with the system seamlessly.
-  - Allow users to anonymously participate in voting proposals (TODO).
-Integration with Polygon Blockchain (TODO).
+- Allow users to anonymously participate in voting proposals (TODO).
+- Integration with Polygon Blockchain (TODO).
 
 -  **Technology Stack:**
 
