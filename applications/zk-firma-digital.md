@@ -13,31 +13,31 @@
 
 -  **Brief Description:**
 
-The project aims to develop a zero-knowledge proof infrastructure solution for enhancing Costa Rica's digital identity system. Our goal is to strengthen citizen privacy by minimizing data collection, enabling individuals to access a wide range of valuable services without disclosing sensitive information. For this we plan to use Circom and the Polygon Blockchain network.
+  The project aims to develop a zero-knowledge proof infrastructure solution for enhancing Costa Rica's digital identity system. Our goal is to strengthen citizen privacy by minimizing data collection, enabling individuals to access a wide range of valuable services without disclosing sensitive information. For this we plan to use Circom and the Polygon Blockchain network.
 
-We already have developed an initial Proof-of-concept you can find here: [zk-firma-digital](https://github.com/kuronosec/zk-firma-digital) . The project is Open Source under the Apache-2.0 license. As a next step for our project, and proposal for this grant, we want to show the capabilities of our approach by allowing Costa Rican citizens to participate in voting proposals in an anonymous way while keeping the ability to authenticate their identities and therefore proving that they are enabled to vote, all by using blockchain technologies.
+  We already have developed an initial Proof-of-concept you can find here: [zk-firma-digital](https://github.com/kuronosec/zk-firma-digital) . The project is Open Source under the Apache-2.0 license. As a next step for our project, and proposal for this grant, we want to show the capabilities of our approach by allowing Costa Rican citizens to participate in voting proposals in an anonymous way while keeping the ability to authenticate their identities and therefore proving that they are enabled to vote, all by using blockchain technologies.
 
 -  **Core Idea:**
 
-The Costa Rican government offers an advanced digital identity system (Firma Digital) that allows residents or entities to sign documents with a digital identity validated by the central bank as CA and authenticate themselves on various public or private websites and services. However, there is a significant privacy concern related to sensitive data in Costa Rica. A small amount of identity information, such as a national ID number or car plate number, can lead to extensive data collection. Private companies can use this kind of data to harvest citizen data, for instance, by calling and offering them products or services without any previous request or permission. This fact is exceptionally relevant now that big corporations harvest indiscriminate user data to train AI models. Even worse, criminals are collecting this same data to perform identity theft and fraud, sometimes even making fraudulent calls from the jails.
+  The Costa Rican government offers an advanced digital identity system (Firma Digital) that allows residents or entities to sign documents with a digital identity validated by the central bank as CA and authenticate themselves on various public or private websites and services. However, there is a significant privacy concern related to sensitive data in Costa Rica. A small amount of identity information, such as a national ID number or car plate number, can lead to extensive data collection. Private companies can use this kind of data to harvest citizen data, for instance, by calling and offering them products or services without any previous request or permission. This fact is exceptionally relevant now that big corporations harvest indiscriminate user data to train AI models. Even worse, criminals are collecting this same data to perform identity theft and fraud, sometimes even making fraudulent calls from the jails.
 
-Our project aims to address these privacy issues by developing a zero-knowledge proof infrastructure using Polygon blockchain technology and ZK Circom circuits. This solution will enable citizens to verify their identity and provide specific information without revealing actual personal details. By minimizing the distribution of sensitive data across various institutions and companies, we can significantly reduce the risk of data theft. Additionally, this system can authenticate users for diverse services, ensuring they are real individuals and not bots, without requiring sensitive information such as email addresses or phone numbers.
+  Our project aims to address these privacy issues by developing a zero-knowledge proof infrastructure using Polygon blockchain technology and ZK Circom circuits. This solution will enable citizens to verify their identity and provide specific information without revealing actual personal details. By minimizing the distribution of sensitive data across various institutions and companies, we can significantly reduce the risk of data theft. Additionally, this system can authenticate users for diverse services, ensuring they are real individuals and not bots, without requiring sensitive information such as email addresses or phone numbers.
 
 **Core Components and Architecture:**
 
-- **Data Extraction and Validation (PoC available)**:
-  - **Libraries and Applications**: Develop libraries in Javascript and Python to extract data from the Firma Digital certificate and validate signatures issued by the Certification Authority (CA).
+  - **Data Extraction and Validation (PoC available)**:
+    - **Libraries and Applications**: Develop libraries in Javascript and Python to extract data from the Firma Digital certificate and validate signatures issued by the Certification Authority (CA).
 
-  - **Certificate Validation:** Ensure that the certificate information and signature are authentic and belong to a Costa Rican resident and citizen.
+    - **Certificate Validation:** Ensure that the certificate information and signature are authentic and belong to a Costa Rican resident and citizen.
 
-- **Zero-Knowledge Proof Generation (PoC available)**:
-  - **Data Extraction for ZK Proofs**: Extract necessary information from Firma Digital certificates to generate zero-knowledge proofs for identity.
-  - **Off-Chain Management**: Manage identity validation off-chain (via web interfaces).
+  - **Zero-Knowledge Proof Generation (PoC available)**:
+    - **Data Extraction for ZK Proofs**: Extract necessary information from Firma Digital certificates to generate zero-knowledge proofs for identity.
+    - **Off-Chain Management**: Manage identity validation off-chain (via web interfaces).
 
-- **User Interfaces (To improve)**:
-  - **Graphical Interfaces**: Develop intuitive graphical interfaces for users and administrators to interact with the system seamlessly.
-- **Allow users to anonymously participate in voting proposals (TODO)**.
-- **Integration with Polygon Blockchain (TODO)**.
+  - **User Interfaces (To improve)**:
+    - **Graphical Interfaces**: Develop intuitive graphical interfaces for users and administrators to interact with the system seamlessly.
+  - **Allow users to anonymously participate in voting proposals (TODO)**.
+  - **Integration with Polygon Blockchain (TODO)**.
 
 -  **Technology Stack:**
 
