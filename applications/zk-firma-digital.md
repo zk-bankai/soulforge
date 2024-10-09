@@ -39,7 +39,7 @@
 - **Allow users to anonymously participate in voting proposals (TODO)**.
 - **Integration with Polygon Blockchain (TODO)**.
 
--  **Technology Stack:** The project will employ a diverse and robust technology stack to achieve its objectives. Key technologies include:
+**Technology Stack:** The project will employ a diverse and robust technology stack to achieve its objectives. Key technologies include:
   - **Javascript**: For developing front-end interfaces and certain back-end functionalities.
   - **Python**: For data extraction, validation, and interaction with the Firma Digital certificate system.
   - **Circom (ZK Proofs)**: To enable privacy-preserving identity verification and voting.
