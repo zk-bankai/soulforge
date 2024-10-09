@@ -41,12 +41,12 @@ Our project aims to address these privacy issues by developing a zero-knowledge 
 -  **Technology Stack:**
 
 The project will employ a diverse and robust technology stack to achieve its objectives. Key technologies include:
-- Javascript: For developing front-end interfaces and certain back-end functionalities.
-- Python: For data extraction, validation, and interaction with the Firma Digital certificate system.
-- Circom (ZK Proofs): To enable privacy-preserving identity verification and voting.
-- Firma Digital: Costa Rica’s digital identity infrastructure, providing the basis for identity verification.
-- Polygon Blockchain: To ensure secure, decentralized handling of identity and voting data.
-- Solidity: For creating smart contracts to manage identity validation and voting proposals on the Polygon blockchain. 
+- **Javascript**: For developing front-end interfaces and certain back-end functionalities.
+- **Python**: For data extraction, validation, and interaction with the Firma Digital certificate system.
+- **Circom (ZK Proofs)**: To enable privacy-preserving identity verification and voting.
+- **Firma Digital**: Costa Rica’s digital identity infrastructure, providing the basis for identity verification.
+- **Polygon Blockchain**: To ensure secure, decentralized handling of identity and voting data.
+- **Solidity**: For creating smart contracts to manage identity validation and voting proposals on the Polygon blockchain. 
 
 **Design Mockups/Prototypes (Optional):**
 
@@ -56,14 +56,15 @@ The project will employ a diverse and robust technology stack to achieve its obj
 
 ## [Section 3] Ecosystem Fit
 
-- Circom: A compiler allowing developers to create ZK circuits with its programming language intuitively.
-- Anon Aadhaar: The Anon Aadhaar libraries, a project built for the Indian citizen Identity using the Circom utilities, share common goals and specifications with our current project. As the website describes, "Anon Aadhaar is a protocol for proving ownership of an Aadhaar identity (Indian Residence ID) in a privacy-preserving manner. It lets users generate a ZK proof of their identity by only revealing the information they want to share (to an application)." This definition aligns perfectly with our commitment to privacy and security, making it an ideal foundation for our proposed project.
-- Constancias Municipales: A project where our CEO advised on integrating Costa Rican digital identity with blockchain for issuing signed tax certifications, demonstrating expertise in similar initiatives.
-- Polygon ID Verifier: An infrastructure we have set up based on Polygon ID to authenticate users with digital credentials while maintaining privacy, utilizing zero-knowledge proofs to reveal only necessary information [polygon-id-verifier](https://github.com/edenia/polygon-id-verifier).
+- **Circom**: A compiler allowing developers to create ZK circuits with its programming language intuitively.
+- **Anon Aadhaar**: The Anon Aadhaar libraries, a project built for the Indian citizen Identity using the Circom utilities, share common goals and specifications with our current project. As the website describes, "Anon Aadhaar is a protocol for proving ownership of an Aadhaar identity (Indian Residence ID) in a privacy-preserving manner. It lets users generate a ZK proof of their identity by only revealing the information they want to share (to an application)." This definition aligns perfectly with our commitment to privacy and security, making it an ideal foundation for our proposed project.
+- **Constancias Municipales**: A project where Andres advised on integrating Costa Rican digital identity with blockchain for issuing signed tax certifications, demonstrating expertise in similar initiatives.
+- **Polygon ID Verifier**: An infrastructure we have set up based on Polygon ID to authenticate users with digital credentials while maintaining privacy, utilizing zero-knowledge proofs to reveal only necessary information [polygon-id-verifier](https://github.com/edenia/polygon-id-verifier).
 
-Mention any similar projects [If any exists], How is the idea of this project different or better?
+**Mention any similar projects [If any exists], How is the idea of this project different or better?**
 
 We were inspired both by Anon Aadhaar and ZK Passport to create our ZK Firma Digital project. However, those projects only allow users to validate government digital signatures by QR codes and X509 certificates, while ours allow users to use their ID smart cards to also sign arbitrary data. This makes our approach even more powerful and flexible allowing different people and entities to create their own type of authenticated data taking advantage of already built PKI infrastructures. It can be extended to other countries with similar technologies other than Costa Rica.
+
 There is still no system like this in the CIRCOM ecosystem. In addition, we want to provide an integration for Verifiable Credentials and Decentralized Identities using existing PKI infrastructure, while taking advantage of the ZKP capabilities to keep sensitive information private.
 ## [Section 4] Team :busts_in_silhouette: 
 
@@ -80,9 +81,10 @@ Andres Gomez Ramirez, Francis Adrian Gomez Ramirez
 
 -  **Prior Work/Research (Optional):**
 
-Dr. Andres Gomez Ramirez - https://www.linkedin.com/in/andres-gomez-ramirez-bb7226156/
+**Dr. Andres Gomez Ramirez** - https://www.linkedin.com/in/andres-gomez-ramirez-bb7226156/
 Ph.D. in cybersecurity from the University of Frankfurt and CERN. PhD thesis: Deep Learning and Isolation-Based Security for Intrusion Detection and Prevention in Grid Computing: https://cds.cern.ch/record/2686424/files/CERN-THESIS-2018-441.pdf
-Francis Adrian Gomez Ramirez - https://www.linkedin.com/in/francis-adrian-gomez-ramirez-599598138/ Specialist in project management and computer scientist.
+
+**Francis Adrian Gomez Ramirez** - https://www.linkedin.com/in/francis-adrian-gomez-ramirez-599598138/ Specialist in project management and computer scientist.
 
 Our team possesses a rich portfolio of diverse projects, showcasing our extensive expertise across multiple domains. Andres has made significant contributions to the Tails project, the Linux-based OS that enabled Snowden to reveal NSA spying capabilities. As a developer and security researcher for Tails, Andres contributed to advancing privacy protection, which remains a core passion and area of expertise for our team.
 Our capability to undertake substantial projects is further underscored by securing an academic scientific research grant from the Ethereum Foundation, amounting to $102,000 USD. This grant facilitated the creation of Tikuna, an AI-driven security monitoring system designed for the Ethereum P2P network. This has been the only grant for scientific research provided by EF to a team in Latin America. Additionally, our active participation in the Forta network bounty demonstrates our commitment to enhancing blockchain security, by leveraging AI algorithms, we detect malicious smart contracts across Ethereum and other Layer 2 networks.
@@ -97,9 +99,9 @@ This diverse experience, ranging from privacy-focused operating systems to AI-dr
 
 -  **Description:**
 
-Verifiable Credential Signature: Enable users to sign voting data formatted as VC (JSON).
-Signature Validation: Validate the signed voting data and citizen’s signature to confirm authenticity and eligibility.
-CIRCOM vote privacy: add circuits to validate the user ability to emit votes in a proposal and then allow them to vote in an anonymous way.
+**Verifiable Credential Signature**: Enable users to sign voting data formatted as VC (JSON).
+**Signature Validation**: Validate the signed voting data and citizen’s signature to confirm authenticity and eligibility.
+**CIRCOM vote privacy**: add circuits to validate the user ability to emit votes in a proposal and then allow them to vote in an anonymous way.
 
 -  **FTE (Full-Time Equivalent):** 1 FTE.
 
@@ -113,8 +115,9 @@ These costs include 40 hours of work per week x 4 weeks x 35 USD per hour = 5,60
 
 -  **Description:** 
 
-Smart Contracts: Develop required smart contracts for user anonymous identity verification and vote proposal administration, such as counting and publication of results.
-Front End for voting process: Create front end interfaces for users to interact with the voting system, see proposals options and results.
+**Smart Contracts**: Develop required smart contracts for user anonymous identity verification and vote proposal administration, such as counting and publication of results.
+
+**Front End for voting process**: Create front end interfaces for users to interact with the voting system, see proposals options and results.
 
 -  **FTE:** 1 FTE
 
@@ -129,13 +132,14 @@ These costs include 40 hours of work per week x 4 weeks x 35 USD per hour = 5,60
 -  **Future Plans:**
 
 We plan to extend the functionality of our proof-of-concept system to allow several use cases such as: 
-Anonymous proof of humanity
-Health data privacy
-Know Your Customer
-Privacy-Preserving Verification
-Anti-Sybil Mechanisms
-DAO Governance
-Quadratic Funding (QF)
-Wallet Recovery
-And more
+- Anonymous proof of humanity
+- Health data privacy
+- Know Your Customer
+- Privacy-Preserving Verification
+- Anti-Sybil Mechanisms
+- DAO Governance
+- Quadratic Funding (QF)
+- Wallet Recovery
+- And more
+
 Also we want to extend the usage of ID smart cards to other countries. For instance, the EU has similar kinds of IDs for their residents.
