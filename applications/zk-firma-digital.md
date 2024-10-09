@@ -60,7 +60,7 @@
 - **Constancias Municipales**: A project where Andres advised on integrating Costa Rican digital identity with blockchain for issuing signed tax certifications, demonstrating expertise in similar initiatives.
 - **Polygon ID Verifier**: An infrastructure we have set up based on Polygon ID to authenticate users with digital credentials while maintaining privacy, utilizing zero-knowledge proofs to reveal only necessary information [polygon-id-verifier](https://github.com/edenia/polygon-id-verifier).
 
-**Mention any similar projects [If any exists], How is the idea of this project different or better?**
+**Mention any similar projects, How is the idea of this project different or better?**
 
 We were inspired both by Anon Aadhaar and ZK Passport to create our ZK Firma Digital project. However, those projects only allow users to validate government digital signatures by QR codes and X509 certificates, while ours allow users to use their ID smart cards to also sign arbitrary data. This makes our approach even more powerful and flexible allowing different people and entities to create their own type of authenticated data taking advantage of already built PKI infrastructures. It can be extended to other countries with similar technologies other than Costa Rica.
 
