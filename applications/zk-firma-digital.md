@@ -98,10 +98,9 @@ This diverse experience, ranging from privacy-focused operating systems to AI-dr
 -  **Estimated Duration:** 4 weeks
 
 -  **Description:**
-
-**Verifiable Credential Signature**: Enable users to sign voting data formatted as VC (JSON).
-**Signature Validation**: Validate the signed voting data and citizen’s signature to confirm authenticity and eligibility.
-**Circom vote privacy**: add circuits to validate the user ability to emit votes in a proposal and then allow them to vote in an anonymous way.
+  - **Verifiable Credential Signature**: Enable users to sign voting data formatted as VC (JSON).
+  - **Signature Validation**: Validate the signed voting data and citizen’s signature to confirm authenticity and eligibility.
+  - **Circom vote privacy**: add circuits to validate the user ability to emit votes in a proposal and then allow them to vote in an anonymous way.
 
 -  **FTE (Full-Time Equivalent):** 1 FTE.
 
@@ -114,10 +113,8 @@ These costs include 40 hours of work per week x 4 weeks x 35 USD per hour = 5,60
 -  **Estimated Duration:** 4 weeks
 
 -  **Description:** 
-
-**Smart Contracts**: Develop required smart contracts for user anonymous identity verification and vote proposal administration, such as counting and publication of results.
-
-**Front End for voting process**: Create front end interfaces for users to interact with the voting system, see proposals options and results.
+  - **Smart Contracts**: Develop required smart contracts for user anonymous identity verification and vote proposal administration, such as counting and publication of results.
+  - **Front End for voting process**: Create front end interfaces for users to interact with the voting system, see proposals options and results.
 
 -  **FTE:** 1 FTE
 
