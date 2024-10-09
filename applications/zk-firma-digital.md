@@ -26,7 +26,7 @@ Our project aims to address these privacy issues by developing a zero-knowledge 
 **Core Components and Architecture:**
 
 - **Data Extraction and Validation (PoC available)**:
-  - Libraries and Applications: Develop libraries in Javascript and Python to extract data from the Firma Digital certificate and validate signatures issued by the Certification Authority (CA).
+  - **Libraries and Applications**: Develop libraries in Javascript and Python to extract data from the Firma Digital certificate and validate signatures issued by the Certification Authority (CA).
 
   - **Certificate Validation:** Ensure that the certificate information and signature are authentic and belong to a Costa Rican resident and citizen.
 
