@@ -41,12 +41,12 @@ Our project aims to address these privacy issues by developing a zero-knowledge 
 -  **Technology Stack:**
 
 The project will employ a diverse and robust technology stack to achieve its objectives. Key technologies include:
-Javascript: For developing front-end interfaces and certain back-end functionalities.
-Python: For data extraction, validation, and interaction with the Firma Digital certificate system.
-Circom (ZK Proofs): To enable privacy-preserving identity verification and voting.
-Firma Digital: Costa Rica’s digital identity infrastructure, providing the basis for identity verification.
-Polygon Blockchain: To ensure secure, decentralized handling of identity and voting data.
-Solidity: For creating smart contracts to manage identity validation and voting proposals on the Polygon blockchain. 
+- Javascript: For developing front-end interfaces and certain back-end functionalities.
+- Python: For data extraction, validation, and interaction with the Firma Digital certificate system.
+- Circom (ZK Proofs): To enable privacy-preserving identity verification and voting.
+- Firma Digital: Costa Rica’s digital identity infrastructure, providing the basis for identity verification.
+- Polygon Blockchain: To ensure secure, decentralized handling of identity and voting data.
+- Solidity: For creating smart contracts to manage identity validation and voting proposals on the Polygon blockchain. 
 
 -  **Design Mockups/Prototypes (Optional):**
 
