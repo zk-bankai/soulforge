@@ -55,6 +55,8 @@
 
 ## [Section 3] Ecosystem Fit
 
+**Projects from which we have taken inspiration:**
+
 - **Circom**: A compiler allowing developers to create ZK circuits with its programming language intuitively.
 - **Anon Aadhaar**: The Anon Aadhaar libraries, a project built for the Indian citizen Identity using the Circom utilities, share common goals and specifications with our current project. As the website describes, "Anon Aadhaar is a protocol for proving ownership of an Aadhaar identity (Indian Residence ID) in a privacy-preserving manner. It lets users generate a ZK proof of their identity by only revealing the information they want to share (to an application)." This definition aligns perfectly with our commitment to privacy and security, making it an ideal foundation for our proposed project.
 - **Constancias Municipales**: A project where Andres advised on integrating Costa Rican digital identity with blockchain for issuing signed tax certifications, demonstrating expertise in similar initiatives.
