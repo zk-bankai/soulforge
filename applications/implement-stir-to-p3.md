@@ -1,11 +1,7 @@
 
 # [Project Name]
 
-  
-
->  **Note:** This document will be part of the grant agreement. Ensure that all sections are completed accurately. Please use **markdown** format and **delete all instructional notes** before submitting.
-
-  
+ Plonky3 of Stir (POS)
 
 ## [Section 1] Project Information
 
@@ -87,8 +83,13 @@ List the names of all team members (separated by commas).
 
 -  **Prior Work/Research (Optional):**
 
-1. We have rewritten the uni-stark verifier of Plonky3 using Bitcoin Script。
+1. We have rewritten the uni-stark verifier of Plonky3 using Bitcoin Script. The following table shows the verifier data we have collected:
 
+| bit security | log-blowup-factor | query-num | constraint | row-num | column-num | public-input-num  | total-verifier-script  | verify-pcs-fri-script  | verify-constraints-script  | verify-quotient-poly-script  |
+|--------------|-------------------|-----------|------------|---------|------------|-------------------|------------------------|------------------------|----------------------------|------------------------------|
+|    99        |          4        |    16     | Fibonacci  |   1<<3  |   2        |          3        |       7041 kb          |          6848 kb       |         120kb              |            73 kb             |
+|    99        |          4        |    16     | Fibonacci  |   1<<5  |   2        |          3        |       9185 kb          |          8992 kb       |         120kb              |            73 kb             |
+|    99        |          4        |    16     | Fibonacci  |   1<<10 |   2        |          3        |       14593 kb         |          14400 kb      |         120kb              |            73 kb             |
 2. We have nearly completed the implementation of using Plonky3 to recursive Risc0 Proof by translating RISC0 constraint expressions into Plonky3 constraint expressions. 
 
 3.  "Simulation Extractable SNARKs based on Target linear Collision-Resistant Oracle" SCIENCE CHINA Technological Sciences, 2024.DOI: 10.1007/s11431-023-2580-5
@@ -113,7 +114,7 @@ List the names of all team members (separated by commas).
 -  **Description:**  Support fold polynomial with multi-degree during Fri and implement Stir for Plonky3
 -  **FTE (Full-Time Equivalent):** 1
 
--  **Costs:** Salary for three person is 10000u
+-  **Costs:** Salary 10000u
 
   
 
@@ -126,7 +127,7 @@ List the names of all team members (separated by commas).
 -  **Description:** Support fold polynomial with multi-degree during Circle-Fri and implement Circle-Stir for Plonky3
 -  **FTE:** 1
 
--  **Costs:** Salary for three person is 10000u
+-  **Costs:** Salary 10000u
 
 ### Total Costs: 20000u
 
