@@ -10,9 +10,9 @@
 
 -  **Project Name:** zkLP-Road
 
--  **Payment Details:** Wallet Address for USDC (on Polygon Network)]
+-  **Payment Details:** 0x51e6B025e14146fD1E2D78aAF0066d24fB96d0Df
 
--  **Total Amount Requested:** (e.g., 12,000 USDC)
+-  **Total Amount Requested:** 9,000 USDC
 
   
 
@@ -67,7 +67,7 @@ The primary goal is to apply zero-knowledge proofs to road anomaly detection usi
   
 -  **Design Mockups/Prototypes (Optional):**
 
-![alt text](image-1.png)
+![Prototype](https://raw.githubusercontent.com/emarc99/Huddle-Landing-Page/537b6ebc5419be6d347dbb4f0bf2984d17ef7c46/image-1.png)
 
   
 
@@ -79,9 +79,9 @@ The primary goal is to apply zero-knowledge proofs to road anomaly detection usi
 
 There are few projects that focus on privacy-preserving solutions, but none specifically target road safety using real-time road anomaly detection. Some relevant projects include:
 
-  -  **Zk proofs for electric vehicle subsidy terms:** Cybernetica and Galois developed a privacy-preserving technology using ZKPs that allows Estonian electric vehicle (EV) drivers to verify their eligibility for government subsidies by covering a certain mileage in the defined territory without disclosing detailed travel data. The service provider receives the proof and validates the zero-knowledge proof, learning the aggregates, but not the GPS trail (user gains even better confidentiality). https://cyber.ee/resources/stories/ZKP-Dan-Bogdanov/  https://galois.com/blog/2024/09/advancing-the-state-of-the-art-in-zero-knowledge-proofs-sieve-wrap-up/
-  -  **Zero-Knowledge Proof of Traffic (zk-PoT):** It enables vehicles to generate zk blind proofs to their independent observation, without leveraging the ground truth or trust evaluation. zk-PoT https://www.researchgate.net/publication/376578187_Zero-Knowledge_Proof_of_Traffic_A_Deterministic_and_Privacy-Preserving_Cross_Verification_Mechanism_for_Cooperative_Perception_Data will not reveal any information about any particular vehicle, thereby preserving the location privacy of the vehicles.
-  - **A zkSNARK Proof Approach for Authentication and Location Proof:** This approach allows unmanned aerial vehicles (UAVs) to prove their authenticity or location without disclosing sensitive information. https://www.mdpi.com/1424-8220/24/17/5838
+  -  [**Zk proofs for electric vehicle subsidy terms:**](https://cyber.ee/resources/stories/ZKP-Dan-Bogdanov/) Cybernetica and Galois developed a privacy-preserving technology using ZKPs that allows Estonian electric vehicle (EV) drivers to verify their eligibility for government subsidies by covering a certain mileage in the defined territory without disclosing detailed travel data. The service provider receives the proof and validates the zero-knowledge proof, learning the aggregates, but not the GPS trail (user gains even better confidentiality). 
+  -  [**Zero-Knowledge Proof of Traffic (zk-PoT):**](https://www.researchgate.net/publication/376578187_Zero-Knowledge_Proof_of_Traffic_A_Deterministic_and_Privacy-Preserving_Cross_Verification_Mechanism_for_Cooperative_Perception_Data) It enables vehicles to generate zk blind proofs to their independent observation, without leveraging the ground truth or trust evaluation. zk-PoT will not reveal any information about any particular vehicle, thereby preserving the location privacy of the vehicles.
+  - [**A zkSNARK Proof Approach for Authentication and Location Proof:**](https://www.mdpi.com/1424-8220/24/17/5838) This approach allows unmanned aerial vehicles (UAVs) to prove their authenticity or location without disclosing sensitive information. 
 
   
 
@@ -102,7 +102,7 @@ This project addresses the gap in privacy-preserving road anomaly reporting syst
 
 -  **Team Members:**
 
-Emmanuel Aroso, Agu Dike
+[Emmanuel Aroso](https://github.com/emarc99), [Agu Dike](https://github.com/psychemist)
 
   
 
