@@ -89,7 +89,7 @@
 
 - **Prior Work/Research (Optional):**
 
-  Fanka: Won third place in the Web3 URL Hackathon organized by Eth Storage and has shared insights on CairoVM design and lambdaclass zk-STARK design within the community, with in-depth knowledge of zk proof system design.
+  Fanka: Won third place in the Web3 URL Hackathon organized by Eth Storage and has shared insights on [CairoVM design](https://www.youtube.com/watch?v=mfuHY45pVQs&t=3154s&ab_channel=DappLearning) and [lambdaclass zk-STARK design](https://www.youtube.com/watch?v=wEIiSuaMH4o&ab_channel=AntalphaLabs) within the community, with in-depth knowledge of zk proof system design.
 
 ## [Section 5] Development Roadmap :open_book:
 
