@@ -10,7 +10,7 @@
 ## [Section 2] Project Overview :page_facing_up:
 
 - **Brief Description:**
-Plonky On Rails is a tool designed to assist users of Plonky3, a recursive SNARK system, in verifying the satisfiability of arithmetic circuits and ensuring the correctness of user-defined traces. This tool will transform arithmetic circuits into SMT-LIB format and use SMT solvers to automate satisfiability checks, offering greater confidence in circuit designs. Our goal is to improve the usability and security of Plonky3, streamlining proof generation and enhancing trust in the circuits produced by developers in the zero-knowledge proof and secure computation communities.
+Plonky On Rails is a tool designed to assist users of Plonky3, a recursive SNARK system, in verifying the satisfiability of arithmetic circuits and ensuring the correctness of user-defined traces. This tool will transform arithmetic circuits into SMT-LIB format and use SMT solvers to automate satisfiability checks, offering greater confidence in circuit designs. Our goal is to improve the usability and security of Plonky3 without getting in the users' way by streamlining proof generation and enhancing trust in the circuits produced by developers in the zero-knowledge proof and secure computation communities.
 
 - **Core Idea:**
 The primary goal of Plonky On Rails is to create a robust and user-friendly tool that translates arithmetic circuits into SMT queries, enabling users to automatically verify their satisfiability. The tool will help developers ensure that user-defined traces are consistent with their circuits, preventing faulty or ambiguous proofs. This verification ensures circuit validity and optimizes proof generation in Plonky3, increasing trust and efficiency.
