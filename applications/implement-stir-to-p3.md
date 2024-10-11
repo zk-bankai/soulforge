@@ -117,7 +117,7 @@ List the names of all team members (separated by commas).
 -  **Estimated Duration:** 1 month
 
 -  **Description:**  Support multi-degree(K>2) folding feature for Fri and implement Stir for Plonky3.
--  **FTE (Full-Time Equivalent):** 1
+-  **FTE (Full-Time Equivalent):** 2.5
 
 -  **Costs:** Salary 10000u
 
@@ -130,7 +130,7 @@ List the names of all team members (separated by commas).
 -  **Estimated Duration:** 1 month
 
 -  **Description:**  Support a Uni-STARK verifier on Bitcoin(based OP_CAT), whether based on PCS-STIR or PCS-FRI. 
--  **FTE:** 1
+-  **FTE:** 2.5
 
 -  **Costs:** Salary 10000u
 
@@ -141,7 +141,7 @@ List the names of all team members (separated by commas).
 -  **Estimated Duration:** 1 month
 
 -  **Description:**  Implement Circle-Stir for Plonky3 and the corresponding verifier on Bitcoin(based OP_CAT).
--  **FTE:** 1
+-  **FTE:** 2.5
 
 -  **Costs:** Salary 10000u
 
@@ -149,7 +149,7 @@ List the names of all team members (separated by commas).
   
 
 
-### Total Costs: 30000u
+### Total Costs: 10000u + 10000u + 10000u = 30000u
 
 ## [Section 6] Extended Scope
 
