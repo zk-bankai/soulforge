@@ -111,7 +111,7 @@ List the names of all team members (separated by commas).
 
 -  **Estimated Duration:** 1 month
 
--  **Description:**  Support fold polynomial with multi-degree during Fri and implement Stir for Plonky3
+-  **Description:**  Support multi-degree(K>2) folding feature for Fri and implement Stir for Plonky3.
 -  **FTE (Full-Time Equivalent):** 1
 
 -  **Costs:** Salary 10000u
@@ -124,7 +124,7 @@ List the names of all team members (separated by commas).
 
 -  **Estimated Duration:** 1 month
 
--  **Description:** Support fold polynomial with multi-degree during Circle-Fri and implement Circle-Stir for Plonky3
+-  **Description:**  Support multi-degree(K>2) folding feature for Circle-Fri and implement Circle-Stir for Plonky3.
 -  **FTE:** 1
 
 -  **Costs:** Salary 10000u
