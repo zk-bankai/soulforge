@@ -10,6 +10,9 @@
 
 - **Brief Description:**
 This project aims to enhance Plonky3 by implementing hybrid-hash mixed-matrix commitment scheme (H2M2CS) and STIR (Shift To Improve Rate). These improvements will boost Plonky3's performance and flexibility.
+More details on each issue:
+- https://github.com/Plonky3/Plonky3/issues/485
+- https://github.com/Plonky3/Plonky3/issues/476
 
 - **Core Idea:**
 The core innovations are:
