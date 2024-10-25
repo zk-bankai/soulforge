@@ -115,6 +115,7 @@ These costs include 40 hours of work per week x 4 weeks x 35 USD per hour = 5,60
 -  **Description:** 
   - **Smart Contracts**: Develop required smart contracts for user anonymous identity verification and vote proposal administration, such as counting and publication of results.
   - **Front End for voting process**: Create front end interfaces for users to interact with the voting system, see proposals options and results.
+  - **Record video of actual users using our solution**: Organize a small mockup election with real users trying our ZK solution and record a video of the event. This way, we can showcase and share our project's achievements and, at the same time, help detect and fix potential bugs.
 
 **FTE:** 1 FTE
 
