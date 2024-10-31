@@ -160,10 +160,10 @@ Following, are some of the recent related projects that core memebers built with
 ## [Demo] Details
 
 To fully showcase the practicallity of the proposal, we plan to provide an on-chan Demo that has following phases:
-- **[setup phase]**: A spesific set of smart contracts will be deployed that can verify image manipulations through VIMz proofs.
-- **[Challenge submission]**: any entity/user can post an image of their choice on the smart contract interface as a challenge to be specidifically edited as the challenger described, and then locks a certain amount of ETH or an ERC20  token as the reward. The original image can also be submitted as a blob in case it is large.
-- **[Off-chain proving]**: A user locally edits the image as specified, and then create a zk proof of the image manipulation using VIMz.
-- **[On-chain claim]**: They send a proof of the image manipulation and the resulting edited image and collect their rewards directly from the smart contract.
+1. **[setup phase]**: A spesific set of smart contracts will be deployed that can verify image manipulations through VIMz proofs.
+2. **[Challenge submission]**: any entity/user can post an image of their choice on the smart contract interface as a challenge to be specidifically edited as the challenger described, and then locks a certain amount of ETH or an ERC20  token as the reward. The original image can also be submitted as a blob in case it is large.
+3. **[Off-chain proving]**: A user locally edits the image as specified, and then create a zk proof of the image manipulation using VIMz.
+4. **[On-chain claim]**: They send a proof of the image manipulation and the resulting edited image and collect their rewards directly from the smart contract.
 
 
 **[Future Work]:** In future, after series of careful redesigns and gas optimizations done on the deployed contracts, a more involved version will allow users to send multiple specific and more precise challenges on-chain (edit an image in X, Y and Z ways), which can then be proven later on!
