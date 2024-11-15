@@ -7,7 +7,7 @@
 
 -  **Payment Details:** 0x86E67a05324A55AF6B2b3bF1A5cBA1778C56A8bE (on Polygon Network). 
 
--  **Total Amount Requested:** 11,200 USD
+-  **Total Amount Requested:** 10,500 USD
 
 ## [Section 2] Project Overview :page_facing_up:
 
@@ -104,9 +104,9 @@ This diverse experience, ranging from privacy-focused operating systems to AI-dr
 
 **FTE (Full-Time Equivalent):** 1 FTE.
 
-**Costs:** 5,600 USD
+**Costs:** 5,000 USD
  
-These costs include 40 hours of work per week x 4 weeks x 35 USD per hour = 5,600 USD
+These costs include 40 hours of work per week x 4 weeks x 31.25 USD per hour = 5,000 USD
 
 ### Milestone 2 — Integration with Polygon Blockchain 
 
@@ -114,15 +114,19 @@ These costs include 40 hours of work per week x 4 weeks x 35 USD per hour = 5,60
 
 -  **Description:** 
   - **Smart Contracts**: Develop required smart contracts for user anonymous identity verification and vote proposal administration, such as counting and publication of results.
-  - **Front End for voting process**: Create front end interfaces for users to interact with the voting system, see proposals options and results.
+  - **Front End for voting process**: Create front-end interfaces for users to interact with the voting system and see a list of proposals, options, and results. This front-end should be usable from a mobile phone. If possible, the ZK proof creation will also be made on the phone or via Web.
+  - **Record video of actual users using our solution**: Organize a small mockup election with real users trying our ZK solution and record a professional video of the event. This way, we can showcase and share our project's achievements and, at the same time, help detect and fix potential bugs.
+
 
 **FTE:** 1 FTE
 
-**Costs:** 5,600 USD
+**Costs:** 5,000 USD
 
-These costs include 40 hours of work per week x 4 weeks x 35 USD per hour = 5,600 USD 
+These costs include 40 hours of work per week x 4 weeks x 31.25 USD per hour = 5,000 USD
 
-  ### Total Costs: 5,600+ 5,600 = 11,200 USD
+The costs also include a professional final video milestone for 500 USD
+
+  ### Total Costs: 5,000+ 5,000 + 500 = 10,500 USD
 
 ## [Section 6] Extended Scope 
 
