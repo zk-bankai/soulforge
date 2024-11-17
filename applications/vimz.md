@@ -10,7 +10,7 @@
 
 -  **Payment Details:** 0xD4F6DC3Ac7AfD370544F307f4A53D6f77Ed4E818 (on Polygon Network).
 
--  **Total Amount Requested:** 13,000
+-  **Total Amount Requested:** 10,000
 
   
 
@@ -133,10 +133,22 @@ Following, are some of the recent related projects that core memebers built with
 
 -  **Description:** While currently we support global transformations in our **Circom** circuits (global means that the effect is done on all of the pixel images, e.g., tuning contrast or sharpness of the entire image), we need to go further and support selective transformations (e.g., you want to blur only a part of an image not the entire image). This requires additional layers of control in our **_"folding-friendly"_** image transformation functions in **Circom**. 
 
+- **Demo Details**:
+  - To fully showcase the practicallity of the proposal, we plan to provide a UI in which the user can apply an effect and prove them as follows: 
+    1. **[upload image]**
+    2. **[Apply Selective Effect]**
+       - select blocks where the effect should apply.
+       - choose the effect type.
+    3. **[generate proof for the final image]**
+       - Download the resulting image.
+       - Download the proof.
+    4. **[Verify]**
+       - given the same editted image and the proof, the verification should be successful.
+    
 -  **FTE (Full-Time Equivalent):** 2 FTE
 
--  **Costs:** 6,000 USDC
-   -  Circuit developements (Circom + porting to Nova + test): 4,500
+-  **Costs:** 5,000 USDC
+   -  Circuit developements (Circom + porting to Nova + test): 3,500
    -  Benchmarking and quantitative reports: 500
    -  Formal proofs: 1,000
   
@@ -146,16 +158,29 @@ Following, are some of the recent related projects that core memebers built with
 -  **Estimated Duration:** 1.5 months
 
 -  **Description:** Currently we are using [nova-rs](https://github.com/microsoft/Nova) library for our folding backend. However, a more recent library [Sonobe](https://github.com/privacy-scaling-explorations/sonobe) exists that can generate Solidity verifiers for for our final compressed zkSNARKs. We plan to use our Circom circuits with that library and be able to fully deploy (without any mock contracts) our Solidity verifiers on a mainstream EVM, such as Polygon. The 100% achievement would be successful transactions on Polygon testment/mainnet proving authenticity of an image transformation using the proofs of VIMz. 
- 
+
+- **Demo Details**:
+  - To fully showcase the practicallity of the proposal, we plan to provide an on-chan Demo that has following phases:
+    1. **[setup phase]**: A spesific set of smart contracts will be deployed that can verify image manipulations through VIMz proofs.
+    2. **[Challenge submission]**: any entity/user can post an image of their choice on the smart contract interface as a challenge to be specidifically edited as the challenger described, and then locks a certain amount of ETH or an ERC20  token as the reward. The original image can also be submitted as a blob in case it is large.
+    3. **[Off-chain proving]**: A user locally edits the image as specified, and then create a zk proof of the image manipulation using VIMz.
+    4. **[On-chain claim]**: They send a proof of the image manipulation and the resulting edited image and collect their rewards directly from the smart contract.
+
+
 -  **FTE:** 1.5 FTE
 
--  **Costs:** 7,000 USDC
+-  **Costs:** 5,000 USDC
    -  Developements (porting Circom contrast to Sobone + functional tests): 2,300
    -  Creating Solidity verifiers for the proofs + tests: 700
-   -  Writing final contracts: 2,500
-   -  Deployment and further tests on Testnet/Mainnet: 1,500
+   -  Writing final contracts: 1,500
+   -  Deployment and further tests on Testnet/Mainnet: 500
   
-  ### Total Costs: (6,000 + 7,000 = 13,000 USDC)
+  ### Total Costs: (5,000 + 5,000 = 10,000 USDC)
+
+
+
+**[Future Work]:** In future, after series of careful redesigns and gas optimizations done on the deployed contracts, a more involved version will allow users to send multiple specific and more precise challenges on-chain (edit an image in X, Y and Z ways), which can then be proven later on!
+
 
 ## [Section 6] Extended Scope
 
