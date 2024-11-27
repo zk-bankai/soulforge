@@ -73,13 +73,6 @@
     - [STARK by Hand](https://dev.risczero.com/proof-system/stark-by-hand#lesson-9-the-deep-technique)
     - [Diving DEEP FRI in the STARK world: learning your daily moon math with a concrete example](https://blog.lambdaclass.com/diving-deep-fri/)
 
--  **Unique Contribution:**
-  - [An introduction to circle STARKs](https://blog.lambdaclass.com/an-introduction-to-circle-starks/)
-    - [STARK by Hand](https://dev.risczero.com/proof-system/stark-by-hand#lesson-9-the-deep-technique)
-    - [Diving DEEP FRI in the STARK world: learning your daily moon math with a concrete example](https://blog.lambdaclass.com/diving-deep-fri/)
-
--  **Unique Contribution:**
-
 - **Unique Contribution:**
 
   While existing articles introduce Circle STARKs and Circle FFT, they often lack detailed, understandable examples that allow readers to fully grasp the concepts. This project addresses that gap by providing comprehensive tutorials that combine mathematical explanations with practical examples, diagrams, and Python code. By focusing on Mersenne 5, readers can perform hand calculations and follow along with code snippets, enhancing their understanding.
