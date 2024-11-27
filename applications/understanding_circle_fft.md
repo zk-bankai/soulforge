@@ -68,10 +68,7 @@
   - [Deep dive into Circle-STARKs FFT](https://ihagopian.com/posts/deep-dive-into-circle-starks-fft)
   - [Yet another circle STARK tutorial](https://research.chainsafe.io/blog/circle-starks)
   - [Exploring circle STARKs](https://vitalik.eth.limo/general/2024/07/23/circlestarks.html)
-    - [An introduction to circle STARKs](https://blog.lambdaclass.com/an-introduction-to-circle-starks/)
-    - [An introduction to circle STARKs](https://blog.lambdaclass.com/an-introduction-to-circle-starks/)
-    - [STARK by Hand](https://dev.risczero.com/proof-system/stark-by-hand#lesson-9-the-deep-technique)
-    - [Diving DEEP FRI in the STARK world: learning your daily moon math with a concrete example](https://blog.lambdaclass.com/diving-deep-fri/)
+  - [An introduction to circle STARKs](https://blog.lambdaclass.com/an-introduction-to-circle-starks/)
 
 - **Unique Contribution:**
 
