@@ -4,7 +4,7 @@
 
 - **Project Name:** Plonky3 Enhancement: Hybrid-Hash MMCS; STIR
 - **Payment Details:** 0x4f9720356Eae7000Ec2e3379caDF8990232c62a0
-- **Total Amount Requested:** 60,000 USDC
+- **Total Amount Requested:** 45,000 USDC
 
 ## [Section 2] Project Overview :page_facing_up:
 
